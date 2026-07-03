@@ -1,0 +1,720 @@
+{
+  "generated_at": "2026-07-03T12:41:00-04:00",
+  "vendors": [
+    {
+      "vendor_name": "NetSuite (Oracle)",
+      "program_name": "NetSuite Solution Provider Program (SPP); SuiteCloud Developer Network (SDN) for ISVs; Alliance Partner Program; BPO Partners",
+      "website": "https://www.netsuite.com/portal/partners/solution-program.shtml",
+      "partner_types": [
+        "Reseller / VAR",
+        "SI / Implementation",
+        "ISV / Development",
+        "Referral",
+        "OEM"
+      ],
+      "tiers": [
+        "Authorized/Silver",
+        "Gold",
+        "Platinum (informal '5-Star/4-Star' naming used by third-party directories)",
+        "SDN: Select",
+        "SDN: Premier (invite-only)"
+      ],
+      "revenue_share_range": "30\u201350% margin on new license sales, 10\u201330% on renewal margin, ~15% on services/support",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Not specified; described as 'Real-Time Lead Registration'"
+      },
+      "mdf_available": {
+        "offered": true,
+        "notes": "Cooperative Marketing Funds available to Solution Provider partners per official program guide"
+      },
+      "certification_cost": "SDN annual membership fee $3,000/year; SPP certification/testing included in program benefits",
+      "annual_partner_fee": "SDN: $3,000/year; SPP: no separate stated fee but requires ~$100,000/year new license sales commitment",
+      "ecosystem_size": "1,000+ active Solution Provider partners worldwide; 43,000+ NetSuite customers in 220 countries",
+      "geographic_reach": "Global \u2014 Americas, EMEA, JAPAC",
+      "recent_program_changes": [
+        {
+          "date": "2025-10-07",
+          "change": "NetSuite Expands Partner Program to Accelerate AI Innovation \u2014 launched SuiteApp.AI Marketplace and new AI Elite/AI badges for SDN partners",
+          "source_url": "https://www.oracle.com/sg/news/announcement/sw25-netsuite-expands-partner-program-accelerate-ai-innovation-2025-10-06/"
+        }
+      ],
+      "best_fit_icp": "Mid-market to Enterprise",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "NetSuite Solution Provider Program overview",
+          "url": "https://www.netsuite.com/portal/partners/solution-program.shtml"
+        },
+        {
+          "label": "NetSuite Become a Partner",
+          "url": "https://www.netsuite.com/portal/partners/become-a-partner.shtml"
+        },
+        {
+          "label": "SuiteCloud Developer Network (SDN)",
+          "url": "https://www.netsuite.com/portal/developers/sdn.shtml"
+        },
+        {
+          "label": "NetSuite SPP official program guide (PDF)",
+          "url": "https://www.netsuite.com/portal/assets/pdf/ds-ns-solution-provider-program-2.pdf"
+        },
+        {
+          "label": "Oracle: NetSuite Expands Partner Program to Accelerate AI Innovation (Oct 2025)",
+          "url": "https://www.oracle.com/sg/news/announcement/sw25-netsuite-expands-partner-program-accelerate-ai-innovation-2025-10-06/"
+        },
+        {
+          "label": "ERP Research: NetSuite Partners directory",
+          "url": "https://www.erpresearch.com/netsuite-partners"
+        },
+        {
+          "label": "houseblend.io: NetSuite partner types and tiers",
+          "url": "https://www.houseblend.io/articles/netsuite-partner-types-and-tiers"
+        }
+      ]
+    },
+    {
+      "vendor_name": "SAP (Business One + S/4HANA)",
+      "program_name": "SAP PartnerEdge",
+      "website": "https://www.sap.com/partners/partner-program.html",
+      "partner_types": [
+        "Reseller / VAR",
+        "SI / Implementation",
+        "ISV / Development",
+        "OEM"
+      ],
+      "tiers": [
+        "Open Ecosystem (no-cost entry)",
+        "Silver",
+        "Gold",
+        "Platinum (invite-only)"
+      ],
+      "program_structure_note": "SAP PartnerEdge is organized into 4 engagement tracks rather than a single tier ladder: Sell (resellers/VARs), Build (OEM/ISV/app developers), Service (consultants/SIs), and Run (MSP/outsourcing, invite-only).",
+      "revenue_share_range": "Not publicly disclosed",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Not a named 'deal registration' program; partners register customer projects/deployment waves via SAP for Me with 90-day and health-indicator metrics"
+      },
+      "mdf_available": {
+        "offered": true,
+        "notes": "SAP 'development funds' available to Sell/Run/Build tracks \u2014 up to 100% funding for sales enablement, 100% for customer stories, up to 100% for partner recruitment, 50% for training/certification/coaching"
+      },
+      "certification_cost": "Not separately priced; SAP Learning Hub partner edition includes 4 exam attempts/year",
+      "annual_partner_fee": "Sell/Service track: \u20ac3,700/year; Build track only: \u20ac2,000/year (+\u20ac1,700 to add another track); Partner Grouping Agreement fees scale \u20ac4,200\u2013\u20ac39,000 by entity count",
+      "ecosystem_size": "25,000+ partners worldwide (SAP News, Jan 2025); ~24,000 per Houlihan Lokey Oct 2024 report; 3,380+ verified listings in ERP Research directory",
+      "geographic_reach": "Global \u2014 particularly strong in EMEA",
+      "recent_program_changes": [
+        {
+          "date": "2025-01-16",
+          "change": "SAP PartnerEdge Evolves for Cloud and AI Business \u2014 redesign toward 100% cloud focus with new AI adoption pillar",
+          "source_url": "https://news.sap.com/2025/01/sap-partneredge-cloud-driven-business-in-ai-era/"
+        },
+        {
+          "date": "2025-05-23",
+          "change": "Unstoppable Together: Partners Will Deliver the Promise of SAP Business Suite",
+          "source_url": "https://news.sap.com/2025/05/partners-deliver-promise-sap-business-suite/"
+        },
+        {
+          "date": "2026-01-19",
+          "change": "Updates to SAP's Integration Certification Program for Partner-Built Solutions",
+          "source_url": "https://news.sap.com/2026/01/updates-sap-integration-certification-program-partner-built-solutions/"
+        }
+      ],
+      "best_fit_icp": "Enterprise (S/4HANA) and SMB (Business One) \u2014 dual segment",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "SAP Partner Program overview",
+          "url": "https://www.sap.com/partners/partner-program.html"
+        },
+        {
+          "label": "SAP PartnerEdge Program Guide (PDF)",
+          "url": "https://partneredge.sap.com/content/dam/public/dni/pe_program_guide_preview.pdf"
+        },
+        {
+          "label": "SAP News: PartnerEdge Evolves for Cloud and AI Business",
+          "url": "https://news.sap.com/2025/01/sap-partneredge-cloud-driven-business-in-ai-era/"
+        },
+        {
+          "label": "SAP News: Partners Will Deliver the Promise of SAP Business Suite",
+          "url": "https://news.sap.com/2025/05/partners-deliver-promise-sap-business-suite/"
+        },
+        {
+          "label": "SAP News: Updates to Integration Certification Program",
+          "url": "https://news.sap.com/2026/01/updates-sap-integration-certification-program-partner-built-solutions/"
+        },
+        {
+          "label": "Channel Futures: SAP Brings New Tiers, Engagement Models to PartnerEdge",
+          "url": "https://www.channelfutures.com/channel-business/sap-brings-new-tiers-engagement-models-to-partneredge-program"
+        },
+        {
+          "label": "ERP Research: SAP Partners directory",
+          "url": "https://www.erpresearch.com/sap-partners"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Acumatica",
+      "program_name": "Acumatica Partner Program (VAR Program + Alliance Program)",
+      "website": "https://www.acumatica.com/partners/",
+      "partner_types": [
+        "Reseller / VAR",
+        "ISV / Development",
+        "OEM",
+        "Referral"
+      ],
+      "tiers": [
+        "VAR: Silver",
+        "VAR: Gold",
+        "Alliance: Bronze",
+        "Alliance: Silver",
+        "Alliance: Gold",
+        "Alliance: Platinum"
+      ],
+      "revenue_share_range": "Not disclosed as a fixed public %; described as 'some of the most generous margins in the industry'. Alliance Program referral fee: flat 15% across all tiers (2024 guide). Partner Referral Program: minimum 5% recurring referral fee.",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Leads registered via Alliance portal must convert within 1 year"
+      },
+      "mdf_available": {
+        "offered": true,
+        "notes": "No explicitly named 'MDF' fund on public pages, but 2026 CRN guide cites 'incremental investment in MDF'; core lead-sharing model distributes 100% of generated leads to partners"
+      },
+      "certification_cost": "Free \u2014 no fees for training/badges (Sales Consultant, Pre-Sales Engineer, Business Consultant, etc.)",
+      "annual_partner_fee": "$0 \u2014 Acumatica explicitly markets 'zero startup or annual fees' versus competitors' $7,500\u2013$14,000",
+      "ecosystem_size": "500+ total partners (Acumatica CEO 2025 year-in-review); ~350-450 VARs specifically per multiple sources; 10,000+ customers (EQT/Vista press release, May 2025)",
+      "geographic_reach": "Americas, Africa, Europe, Southeast Asia, Middle East",
+      "recent_program_changes": [
+        {
+          "date": "2026-02-26",
+          "change": "2026 CRN Partner Program Guide entry: launched new tiering program, new logo-source program, AI-powered instructor-led training modules, Partner Elevate Americas/International events (100+ partners), incremental MDF investment, focus on distribution model in key countries",
+          "source_url": "https://www.crn.com/news/channel-news/2026/5-star-software-vendor-programs"
+        },
+        {
+          "date": "2025-05-29",
+          "change": "EQT sold Acumatica to Vista Equity Partners following a 'transformational growth journey' \u2014 ownership change likely to affect future partner investment",
+          "source_url": "https://eqtgroup.com/en/news/eqt-to-sell-acumatica-to-vista-equity-partners-following-transformational-growth-journey-2025-05-29"
+        }
+      ],
+      "best_fit_icp": "Mid-market (SMB to mid-market cloud ERP)",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Acumatica Partners overview",
+          "url": "https://www.acumatica.com/partners/"
+        },
+        {
+          "label": "Acumatica VAR Program",
+          "url": "https://www.acumatica.com/partners/var/"
+        },
+        {
+          "label": "Acumatica Alliance Program",
+          "url": "https://www.acumatica.com/partners/alliance/"
+        },
+        {
+          "label": "Acumatica Alliance Program Guide (PDF, 2024)",
+          "url": "https://www.acumatica.com/media/2024/09/Acumatica-Alliance-Program-Guide-FNL-July-2024.pdf"
+        },
+        {
+          "label": "Acumatica Partner Referral Program Datasheet (PDF)",
+          "url": "https://www.acumatica.com/media/2020/08/Acumatica-Partner-Referral-Program-Datasheet-08.25.2020.pdf"
+        },
+        {
+          "label": "Acumatica blog: The Acumatica Ecosystem \u2014 zero fees",
+          "url": "https://www.acumatica.com/blog/the-acumatica-ecosystem-a-place-where-partners-can-thrive/"
+        },
+        {
+          "label": "CIMdata: Acumatica CEO 2025 year-in-review",
+          "url": "https://www.cimdata.com/zh/industry-summary-articles/item/29570"
+        },
+        {
+          "label": "EQT: Sale of Acumatica to Vista Equity Partners",
+          "url": "https://eqtgroup.com/en/news/eqt-to-sell-acumatica-to-vista-equity-partners-following-transformational-growth-journey-2025-05-29"
+        },
+        {
+          "label": "CRN 2026 Partner Program Guide: 5-Star Software Vendor Programs",
+          "url": "https://www.crn.com/news/channel-news/2026/5-star-software-vendor-programs"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Sage (Sage Intacct + Sage 200/300)",
+      "program_name": "Sage Partner Programme (resellers, Sage 200/300); Sage Intacct Partner Network (separate track)",
+      "website": "https://www.sage.com/en-us/partners/business-partners/",
+      "partner_types": [
+        "Reseller / VAR",
+        "SI / Implementation",
+        "ISV / Development",
+        "Referral"
+      ],
+      "tiers": [
+        "Authorized",
+        "Silver",
+        "Gold",
+        "Platinum",
+        "ISV track: Developer (Silver-equivalent)",
+        "ISV track: Champion (Gold-equivalent)",
+        "ISV track: Rockstar (invite-only, Endorsed)"
+      ],
+      "program_structure_note": "Standard 4-tier reseller ladder (Authorized/Silver/Gold/Platinum) standardized globally since 2015. Sage Intacct explicitly markets a 'single fee, no sales tiers' model, distinct from the tiered Sage 200/300 reseller track.",
+      "revenue_share_range": "Not publicly disclosed on official pages. Third-party source cites ~30% partner commission for approved Sage Intacct VARs under private agreement; Sage Referral Network pays 10% of first-year net spend.",
+      "deal_registration": {
+        "offered": false,
+        "protection_period": "Not explicitly detailed on public program pages"
+      },
+      "mdf_available": {
+        "offered": true,
+        "notes": "Marketing Development Funds (MDF) explicitly named in Sage's French Partner Program brochure; details on earning criteria not public in English-language materials"
+      },
+      "certification_cost": "Development Partner Program (ISV) fees: Silver $350 signup / $250 renewal; Gold $800/$700 (Category 1) or $2,000\u2013$3,000/$1,000\u2013$2,000 (Category 2, higher for ERP product lines)",
+      "annual_partner_fee": "Sage Intacct: 'single fee' model, amount not publicly disclosed; ISV Development Partner fees as listed above",
+      "ecosystem_size": "1,215+ verified partners per ERP Research directory; Sage markets 'thousands of partners' globally; historical figure of 3+ million Sage customers worldwide",
+      "geographic_reach": "Global \u2014 strong presence in UK/EMEA, North America, Africa",
+      "recent_program_changes": [
+        {
+          "date": "n.a.",
+          "change": "No specific dated 2025-2026 program announcements found on public sources during this research; general market trend toward cloud/Sage Intacct focus observed but not tied to a specific press release",
+          "source_url": "https://www.sage.com/en-us/partners/business-partners/"
+        }
+      ],
+      "best_fit_icp": "SMB to Mid-market; Sage Intacct skews mid-market, nonprofit, and professional services verticals",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Sage Business Partners overview",
+          "url": "https://www.sage.com/en-us/partners/business-partners/"
+        },
+        {
+          "label": "Sage Intacct Partners",
+          "url": "https://www.sage.com/en-us/sage-business-cloud/intacct/partners/"
+        },
+        {
+          "label": "ERP Research: Sage Partners directory",
+          "url": "https://www.erpresearch.com/sage-partners"
+        },
+        {
+          "label": "Sage Development Partner Program overview (PDF)",
+          "url": "http://www.sage.com/na/~/media/Category/SNA/Assets/Documents/Sage_Development_Partner_Overview.pdf"
+        },
+        {
+          "label": "Sage Development Partner fee schedule (PDF via Semantic Scholar)",
+          "url": "https://pdfs.semanticscholar.org/c273/c00eccd235219c8cf97c9487d4ec3d04fd56.pdf"
+        },
+        {
+          "label": "ITPro: Sage debuts simplified partner programme",
+          "url": "https://www.itpro.com/cloud/cloud-computing/365516/sage-debuts-simplified-partner-programme"
+        },
+        {
+          "label": "cashflowfrog.com: Sage Intacct partner commission structure",
+          "url": "https://cashflowfrog.com/partners-sage-intacct/"
+        },
+        {
+          "label": "Sage Partner Program brochure (French, MDF reference, PDF)",
+          "url": "https://www.sage.com/fr-fr/-/media/images/sagedotcom/france/fr-fr/pdf/partenaires/brochure-sage-partner-program%20pdf.pdf"
+        },
+        {
+          "label": "Utilize: Sage Intacct Referral Network",
+          "url": "https://www.utilize.co.uk/sage-intacct/referral/"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Microsoft Dynamics 365 (Business Central + Finance & Operations)",
+      "program_name": "Microsoft AI Cloud Partner Program (MAICPP) \u2014 Cloud Solution Provider (CSP) model + Solutions Partner for Business Applications designation",
+      "website": "https://partner.microsoft.com/partnership/solutions-partner-program",
+      "partner_types": [
+        "Reseller / VAR",
+        "SI / Implementation",
+        "ISV / Development",
+        "Referral"
+      ],
+      "tiers": [
+        "Cloud Solution Provider (CSP): Indirect Reseller (no revenue minimum) / Direct Bill (requires $1M trailing-12-month revenue in FY26)",
+        "Solutions Partner designations across 6 solution areas (incl. Business Applications for Dynamics 365/Power Platform), each requiring a Partner Capability Score of 70/100",
+        "System Integrator (SI) and Managed Service Provider (MSP) tracks with their own incentive programs"
+      ],
+      "program_structure_note": "Microsoft retired the old Gold/Silver competency model in October 2022 in favor of solution-area 'Solutions Partner' designations (e.g., Solutions Partner for Business Applications) earned via performance, skilling, and customer success points rather than a linear tier ladder.",
+      "revenue_share_range": "Not publicly disclosed as a single flat percentage; MSPs can earn Partner Earned Credit (PEC) of 15% of managed Azure consumption; CSP margins vary by license type; Dynamics-specific commission structure not separately published",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Managed via Microsoft co-sell and referral programs; specific protection period not publicly disclosed"
+      },
+      "mdf_available": {
+        "offered": true,
+        "notes": "MDF available through the Partner Incentives program, tied to designation level and co-sell performance"
+      },
+      "certification_cost": "Individual Microsoft Certified: Dynamics 365 exams typically ~$165 USD each; partner-level designation requires accumulated certifications rather than a flat program fee",
+      "annual_partner_fee": "Not a flat fee \u2014 gated by revenue thresholds; Direct Bill CSP requires $1M+ trailing-12-month cloud revenue in FY26 (raised from a prior ~$300K/year bar), per Novistra Capital ecosystem report",
+      "ecosystem_size": "500,000+ partners across the overall Microsoft Cloud Partner Program ecosystem (not Dynamics-specific); more than 1,500 partner businesses hold Microsoft's diverse/minority-owned certification (per CRN)",
+      "geographic_reach": "Global",
+      "recent_program_changes": [
+        {
+          "date": "2025-03-24",
+          "change": "Microsoft at 50 blog detailed current partner ecosystem structure: ISV Success pathway for software companies, Solutions Partner designations and specializations tied to go-to-market resources and incentives",
+          "source_url": "https://blogs.microsoft.com/blog/2025/03/24/microsoft-at-50-the-journey-and-future-of-the-partner-ecosystem/"
+        },
+        {
+          "date": "2025-12",
+          "change": "Novistra Capital ecosystem report: Microsoft tripled the minimum trailing-12-month revenue bar for Direct CSP partners to $1 million/year (from ~$300K) and added mandatory 'Solutions Partner' designation requirements in areas like Security and Modern Work",
+          "source_url": "https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf"
+        },
+        {
+          "date": "2026 (FY26)",
+          "change": "Microsoft AI Cloud Partner Program added high-value specializations (Copilot, Sovereign Cloud) and boosted co-sell incentives \u2014 50% more Copilot funding and 70% more Azure Accelerate investment for FY26",
+          "source_url": "https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf"
+        },
+        {
+          "date": "2026-04-08",
+          "change": "Microsoft Tech Community post on the growth engine for partners: Business Central, AI, and partner-to-partner (P2P) motions as a new focus area for MSPs and Business Applications partners",
+          "source_url": "https://techcommunity.microsoft.com/blog/partnernews/ep-38--the-new-growth-engine-for-microsoft-partners-business-central-ai-and-p2p-/4504512"
+        }
+      ],
+      "best_fit_icp": "SMB (Business Central) to Enterprise (Finance & Operations)",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Microsoft Solutions Partner Program",
+          "url": "https://partner.microsoft.com/partnership/solutions-partner-program"
+        },
+        {
+          "label": "Microsoft Partner Center",
+          "url": "https://partner.microsoft.com/"
+        },
+        {
+          "label": "AI Cloud Partners: Microsoft Partner Program 2026 Guide",
+          "url": "https://www.aicloudpartners.com/guides/microsoft-partner-program-guide.html"
+        },
+        {
+          "label": "Microsoft Official Blog: Microsoft at 50 \u2014 partner ecosystem",
+          "url": "https://blogs.microsoft.com/blog/2025/03/24/microsoft-at-50-the-journey-and-future-of-the-partner-ecosystem/"
+        },
+        {
+          "label": "Novistra Capital: Microsoft Service Partner Ecosystem M&A report (PDF)",
+          "url": "https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf"
+        },
+        {
+          "label": "CRN: Microsoft State of the Partner Ecosystem \u2014 5 Things to Know",
+          "url": "https://www.crn.com/news/cloud/microsoft-state-of-the-partner-ecosystem-5-things-to-know"
+        },
+        {
+          "label": "Microsoft Tech Community: New growth engine for partners (Apr 2026)",
+          "url": "https://techcommunity.microsoft.com/blog/partnernews/ep-38--the-new-growth-engine-for-microsoft-partners-business-central-ai-and-p2p-/4504512"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Odoo",
+      "program_name": "Odoo Partner Program",
+      "website": "https://www.odoo.com/partners",
+      "partner_types": [
+        "Reseller / VAR",
+        "SI / Implementation",
+        "ISV / Development"
+      ],
+      "tiers": [
+        "Learning ($990/year)",
+        "Official ($3,950/year) with Ready / Silver / Gold sub-tiers"
+      ],
+      "revenue_share_range": "10% commission on Odoo license sales and Odoo.sh at Learning tier; rising to 20% on licenses and 50% on Odoo.sh at Official tier (per Odoo partner training video). Tier progression requires 10 users/year (Ready), 75 users/year + 3 certified staff + 70% retention (Silver), 300 users/year + 6 certified staff + 80% retention (Gold).",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Not publicly specified"
+      },
+      "mdf_available": {
+        "offered": false,
+        "notes": "No public evidence of a formal MDF program; partner benefits center on training credits and lead sharing instead"
+      },
+      "certification_cost": "Included in Learning ($990/year) or Official ($3,950/year) partnership fee",
+      "annual_partner_fee": "Learning tier: $990/year; Official tier: $3,950/year",
+      "ecosystem_size": "Reported figures vary significantly by source and date: ~9,500 partners (Apr 2025, Odoo Partnerships & Alliances via LinkedIn); 11,291 partners (Sep 2025, Odoo Unlocked #012); 10,000+ partners cited at OXP 2025 event; 3,980 publicly listed/certified partners across 226 countries as of Mar 2026 (JustDoers directory), which is described as roughly one-third of the full network since thousands remain in the unlisted 'Learning' tier.",
+      "geographic_reach": "Global \u2014 strong presence in Europe (Belgium HQ), growing in North America and Asia",
+      "recent_program_changes": [
+        {
+          "date": "2025-09-29",
+          "change": "Odoo reported partner network growth to 11,291 partners worldwide (252 Gold, 633 Silver, 2,689 Ready, with the balance in Learning tier) per Odoo Unlocked newsletter",
+          "source_url": "https://odoounlocked.justdoers.com/p/odoo-unlocked-012-let-s-talk-about-numbers"
+        },
+        {
+          "date": "2026-02-12",
+          "change": "Odoo added ~600 new service partners over the prior year, a 32% year-over-year expansion, per Alten Capital ecosystem analysis",
+          "source_url": "https://alten.capital/blog/odoo-services-partner-ecosystem-update"
+        },
+        {
+          "date": "2026-03-22",
+          "change": "Public partner directory reached 3,980 listed partners with 71,408 total client references and 1,157,204 total seats, per JustDoers Odoo Partners Directory",
+          "source_url": "https://www.justdoers.com/odoo-partners-directory"
+        }
+      ],
+      "best_fit_icp": "SMB to Mid-market",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Odoo Partners page",
+          "url": "https://www.odoo.com/partners"
+        },
+        {
+          "label": "Odoo Unlocked #011: The Evolving Partner Landscape",
+          "url": "https://odoounlocked.justdoers.com/p/odoo-unlocked-011-the-evolving-partner-landscape"
+        },
+        {
+          "label": "Odoo Unlocked #012: Let's Talk About Numbers",
+          "url": "https://odoounlocked.justdoers.com/p/odoo-unlocked-012-let-s-talk-about-numbers"
+        },
+        {
+          "label": "Alten Capital: Odoo Services Partner Ecosystem",
+          "url": "https://alten.capital/blog/odoo-services-partner-ecosystem"
+        },
+        {
+          "label": "Alten Capital: Odoo Services Partner Ecosystem Update (2026)",
+          "url": "https://alten.capital/blog/odoo-services-partner-ecosystem-update"
+        },
+        {
+          "label": "JustDoers: Odoo Partners Directory",
+          "url": "https://www.justdoers.com/odoo-partners-directory"
+        },
+        {
+          "label": "LinkedIn: Sarah Wagon \u2014 9,500 Odoo partners worldwide (Apr 2025)",
+          "url": "https://www.linkedin.com/posts/swagon_there-are-9500-odoo-partners-worldwide-as-activity-7325494865893498882-r6fE"
+        },
+        {
+          "label": "Odoo Partnership Program: Where to Start (YouTube, commission structure detail)",
+          "url": "https://www.youtube.com/watch?v=LYsD1EaE1pA"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Infor (CloudSuite)",
+      "program_name": "Infor Partner Network (IPN)",
+      "website": "https://www.infor.com/partners",
+      "partner_types": [
+        "Reseller / VAR",
+        "SI / Implementation",
+        "ISV / Development"
+      ],
+      "tiers": [
+        "Associate",
+        "Silver",
+        "Gold"
+      ],
+      "revenue_share_range": "Gold tier: 40% commission on first-year cloud contract value, 25% every year thereafter as long as customer remains on board (per Diginomica 2016 reporting on Infor Partner Network economics \u2014 structure referenced as still broadly representative but should be reconfirmed against current IPN fact sheet)",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Not publicly specified"
+      },
+      "mdf_available": {
+        "offered": true,
+        "notes": "Market Development Funding (MDF) program explicitly named as part of IPN's tiered support structure, intended to help partners invest back into their businesses (per original 2011 IPN launch coverage); current earning criteria not confirmed in this research pass"
+      },
+      "certification_cost": "Not publicly disclosed as a flat figure",
+      "annual_partner_fee": "Not publicly disclosed",
+      "ecosystem_size": "~770 certified partners (per research summary; cite Infor Partner Network directory)",
+      "geographic_reach": "Global, with strength in manufacturing and distribution verticals",
+      "recent_program_changes": [
+        {
+          "date": "n.a.",
+          "change": "No specific dated 2025-2026 IPN program announcement located in this research pass; program structure (Associate/Silver/Gold tiers) traces back to a 2011 relaunch and has not been reported as substantially restructured since",
+          "source_url": "https://webassets.infor.com/images/ipn-fact-sheet.pdf?v=1536324998"
+        }
+      ],
+      "best_fit_icp": "Vertical-specific \u2014 manufacturing, distribution, healthcare, fashion (Infor CloudSuite industry focus)",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Infor Partners overview",
+          "url": "https://www.infor.com/partners"
+        },
+        {
+          "label": "Infor Partner Network Fact Sheet (PDF)",
+          "url": "https://webassets.infor.com/images/ipn-fact-sheet.pdf?v=1536324998"
+        },
+        {
+          "label": "CRN: Infor Develops New Program, Standard Contracts for Channel Partners (2011)",
+          "url": "https://www.crn.com/news/channel-programs/230500015/infor-develops-new-program-standard-contracts-for-its-channel-partners"
+        },
+        {
+          "label": "Diginomica: Briefing review \u2014 can Infor's partner strategy keep pace? (Gold commission detail)",
+          "url": "https://diginomica.com/briefing-review-can-infors-partner-strategy-keep-pace-with-its-digital-pursuits"
+        },
+        {
+          "label": "ChannelLife NZ: Commission, bonuses offered by Infor Partner Network",
+          "url": "https://channellife.co.nz/story/commission-bonuses-offered-by-infor-partner-network"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Epicor (Kinetic + Prophet 21)",
+      "program_name": "Epicor Partner Community (Sell / Service / Refer / Develop tracks); tiered Certified Partner Program for Sales/Reseller partners (Silver/Gold/Platinum)",
+      "website": "https://www.epicor.com/en-us/partners/",
+      "partner_types": [
+        "Reseller / VAR (Sell)",
+        "SI / Implementation (Service)",
+        "ISV / Development (Develop)",
+        "Referral (Refer)"
+      ],
+      "tiers": [
+        "Authorized",
+        "Silver",
+        "Gold",
+        "Platinum"
+      ],
+      "revenue_share_range": "Not publicly disclosed as a current fixed percentage. Historical reporting (2016, ChannelLife NZ) cited margins from ~15-20% for referral-style partners up to ~45% for top-performing partners running full sales/marketing operations. Certified tier thresholds (2WTech, 2023): Platinum requires >$2.09M in annual Epicor revenue + 14 dedicated sales/marketing staff; Gold requires >$1.045M + 9 staff; Silver requires $605K\u2013$1.045M + 1 staff.",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Not publicly specified"
+      },
+      "mdf_available": {
+        "offered": true,
+        "notes": "MDF referenced in Epicor's historical three-tiered 'Partners for Growth' incentive program (2008) as 'direct reimbursement on marketing development funds'; not confirmed as still named this way in current program materials"
+      },
+      "certification_cost": "Not publicly disclosed; Epicor Certified Partner status requires completing and maintaining a required number of Epicor product certifications, renewed annually",
+      "annual_partner_fee": "Not publicly disclosed",
+      "ecosystem_size": "400+ partners (per research summary)",
+      "geographic_reach": "Global, with strength in manufacturing and distribution (Kinetic) and wholesale distribution (Prophet 21)",
+      "recent_program_changes": [
+        {
+          "date": "n.a.",
+          "change": "Epicor's official partner page (fetched directly) organizes partners into four relationship types \u2014 Sell (Reseller), Service, Refer, and Develop (ISV) \u2014 with no dated 2025-2026 restructuring announcement found",
+          "source_url": "https://www.epicor.com/en-us/partners/"
+        },
+        {
+          "date": "2026-03-25",
+          "change": "Epicor promoted its Channel Partner Community recruitment on LinkedIn, indicating active partner recruitment push",
+          "source_url": "https://www.linkedin.com/posts/epicor_join-our-channel-partner-community-activity-7442646049783029760-ddts"
+        }
+      ],
+      "best_fit_icp": "Vertical-specific \u2014 manufacturing (Kinetic) and wholesale distribution (Prophet 21), SMB to Mid-market",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Epicor Partners overview (official page, fetched directly)",
+          "url": "https://www.epicor.com/en-us/partners/"
+        },
+        {
+          "label": "Epicor Channel Partners",
+          "url": "https://www.epicor.com/en-us/partners/channel-partners/"
+        },
+        {
+          "label": "Epicor Authorized Channel Partners",
+          "url": "https://www.epicor.com/en-us/partners/authorized-channel-partners/"
+        },
+        {
+          "label": "2WTech: Understanding the Epicor Certified Partner Program Levels",
+          "url": "https://2wtech.com/understanding-the-epicor-certified-partner-program-levels/"
+        },
+        {
+          "label": "ChannelLife NZ: Epicor turns partner program on its head (2016)",
+          "url": "https://channellife.co.nz/story/epicor-turns-partner-program-its-head-open-new-niche-markets"
+        },
+        {
+          "label": "Varinsights: Epicor Announces Three-Tiered Channel Partner Incentive Program (2008)",
+          "url": "https://www.varinsights.com/doc/epicor-announces-three-tiered-channel-partner-0001"
+        },
+        {
+          "label": "TahawulTech: Epicor's El Komy on doubling channel sales (2017)",
+          "url": "https://www.tahawultech.com/features/fresh-take/"
+        },
+        {
+          "label": "LinkedIn: Epicor \u2014 Join Our Channel Partner Community",
+          "url": "https://www.linkedin.com/posts/epicor_join-our-channel-partner-community-activity-7442646049783029760-ddts"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Priority Software",
+      "program_name": "Priority Software Global Partner Network",
+      "website": "https://www.priority-software.com/partners/",
+      "partner_types": [
+        "Reseller / VAR",
+        "SI / Implementation",
+        "ISV / Development"
+      ],
+      "tiers": [
+        "Not publicly segmented into named tiers based on research found"
+      ],
+      "revenue_share_range": "Not publicly disclosed as a percentage. Priority's official partner page confirms 'a rewarding revenue-sharing scheme on software fees' plus '100% services fees retention' for partners, but publishes no specific rate.",
+      "deal_registration": {
+        "offered": false,
+        "protection_period": "Not publicly specified"
+      },
+      "mdf_available": {
+        "offered": false,
+        "notes": "No public evidence of a formal MDF program found in this research pass"
+      },
+      "certification_cost": "Not publicly disclosed",
+      "annual_partner_fee": "Not publicly disclosed",
+      "ecosystem_size": "100+ partners across 70 countries (per research summary)",
+      "geographic_reach": "Global \u2014 notable presence in Israel (HQ), North America, Europe",
+      "recent_program_changes": [
+        {
+          "date": "2025-04-23",
+          "change": "Official 'Become a Partner' page (last updated per page metadata) emphasizes global growth journey positioning, incentives for new territories/verticals, and 100% services fee retention for VAR partners \u2014 no tier structure or specific rates disclosed publicly",
+          "source_url": "https://www.priority-software.com/become-a-partner/"
+        }
+      ],
+      "best_fit_icp": "SMB to Mid-market",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Priority Software Partners overview",
+          "url": "https://www.priority-software.com/partners/"
+        },
+        {
+          "label": "Priority Software: Become a Partner (official page, fetched directly)",
+          "url": "https://www.priority-software.com/become-a-partner/"
+        },
+        {
+          "label": "Priority Software Marketplace: Become a Vendor",
+          "url": "https://market.priority-software.com/become-vendor/"
+        }
+      ]
+    },
+    {
+      "vendor_name": "Deltek",
+      "program_name": "Deltek Solutions Partner Program (plus CPA Partner Program, Technology Integration Program, and Advocate/referral program)",
+      "website": "https://www.deltek.com/en/partners",
+      "partner_types": [
+        "SI / Implementation (Solutions Partners)",
+        "ISV / Development (Technology Integration Partners)",
+        "Referral"
+      ],
+      "tiers": [
+        "Not publicly segmented into a named tier ladder in materials found; distinct sub-programs (Solutions Partner, CPA Partner, Technology Integration, Advocate) function as parallel tracks rather than a single ladder"
+      ],
+      "revenue_share_range": "Not publicly disclosed",
+      "deal_registration": {
+        "offered": true,
+        "protection_period": "Not publicly specified"
+      },
+      "mdf_available": {
+        "offered": false,
+        "notes": "No public evidence of a formal MDF program found in this research pass"
+      },
+      "certification_cost": "Not publicly disclosed",
+      "annual_partner_fee": "Not publicly disclosed",
+      "ecosystem_size": "200+ partners/integrations; 30,000+ Deltek customers (per research summary)",
+      "geographic_reach": "Global, with strength in project-based industries (government contracting, A/E/C, professional services)",
+      "recent_program_changes": [
+        {
+          "date": "n.a.",
+          "change": "Deltek's official partner page does not name or describe distinct 'Solutions Partner Program', 'CPA Partner Program', or 'Advocate' sub-programs \u2014 it presents a single unified 'Deltek Partner Network' with Solutions Partners (implementation/consulting) and Technology Integration Partners (complementary tech). Confirmed directly by fetching the official page.",
+          "source_url": "https://www.deltek.com/en/partners"
+        }
+      ],
+      "best_fit_icp": "Vertical-specific \u2014 project-based businesses: government contractors, A/E/C firms, professional services",
+      "partnerawesome_take": "",
+      "sources": [
+        {
+          "label": "Deltek Partners overview",
+          "url": "https://www.deltek.com/en/partners"
+        },
+        {
+          "label": "Deltek Partner Network (official page, fetched directly)",
+          "url": "https://www.deltek.com/en/partners"
+        },
+        {
+          "label": "Join the Deltek Marketplace",
+          "url": "https://www.deltek.com/en/partners/marketplace/join"
+        }
+      ]
+    }
+  ]
+}

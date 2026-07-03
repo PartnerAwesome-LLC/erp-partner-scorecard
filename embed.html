@@ -1,0 +1,897 @@
+<style>
+.pa-erp-scorecard-embed *, .pa-erp-scorecard-embed *::before, .pa-erp-scorecard-embed *::after{ box-sizing: border-box; margin: 0; padding: 0; }.pa-erp-scorecard-embed{
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --text-xs: clamp(0.6875rem, 0.65rem + 0.2vw, 0.8125rem);
+  --text-sm: clamp(0.8125rem, 0.78rem + 0.15vw, 0.875rem);
+  --text-base: clamp(0.875rem, 0.85rem + 0.12vw, 0.9375rem);
+  --text-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-xl: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+  --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+  --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem;
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}.pa-erp-scorecard-embed[data-theme="dark"], .pa-erp-scorecard-embed [data-theme="dark"]{
+  --bg: #0c0d10;
+  --surface: #14151a;
+  --surface-2: #1a1b22;
+  --surface-3: #22232c;
+  --border: #2a2b36;
+  --border-subtle: #1e1f28;
+  --text: #e2e4ea;
+  --text-muted: #888a96;
+  --text-faint: #555760;
+  --accent-openai: #10a37f;
+  --accent-openai-bg: rgba(16, 163, 127, 0.08);
+  --accent-anthropic: #d4a574;
+  --accent-anthropic-bg: rgba(212, 165, 116, 0.08);
+  --accent-google: #4285f4;
+  --accent-google-bg: rgba(66, 133, 244, 0.08);
+  --badge-new: #22c55e;
+  --badge-change: #f59e0b;
+  --badge-deprecation: #ef4444;
+  --badge-new-bg: rgba(34, 197, 94, 0.1);
+  --badge-change-bg: rgba(245, 158, 11, 0.1);
+  --badge-deprecation-bg: rgba(239, 68, 68, 0.1);
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+}.pa-erp-scorecard-embed[data-theme="light"], .pa-erp-scorecard-embed [data-theme="light"]{
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --surface-2: #f0f1f4;
+  --surface-3: #e8e9ee;
+  --border: #d4d6de;
+  --border-subtle: #e8e9ee;
+  --text: #1a1c24;
+  --text-muted: #6b6e7a;
+  --text-faint: #9a9ca8;
+  --accent-openai: #0d8c6d;
+  --accent-openai-bg: rgba(13, 140, 109, 0.06);
+  --accent-anthropic: #b88a54;
+  --accent-anthropic-bg: rgba(184, 138, 84, 0.06);
+  --accent-google: #3570d4;
+  --accent-google-bg: rgba(53, 112, 212, 0.06);
+  --badge-new: #16a34a;
+  --badge-change: #d97706;
+  --badge-deprecation: #dc2626;
+  --badge-new-bg: rgba(22, 163, 74, 0.08);
+  --badge-change-bg: rgba(217, 119, 6, 0.08);
+  --badge-deprecation-bg: rgba(220, 38, 38, 0.08);
+  --shadow: 0 2px 8px rgba(0,0,0,0.06);
+}.pa-erp-scorecard-embed{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}.pa-erp-scorecard-embed{
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+  min-height: 100dvh;
+}.pa-erp-scorecard-embed /* ---- Layout ---- */
+.dashboard{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}.pa-erp-scorecard-embed .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}.pa-erp-scorecard-embed .header h1{
+  font-size: var(--text-xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}.pa-erp-scorecard-embed .brand{
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-muted);
+}.pa-erp-scorecard-embed .header-meta{
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}.pa-erp-scorecard-embed .dashboard-intro{ margin-bottom: var(--space-8); }.pa-erp-scorecard-embed .dashboard-intro h1{ margin-bottom: var(--space-2); }.pa-erp-scorecard-embed .dashboard-intro .subtitle{ font-size: var(--text-sm); color: var(--text-muted); max-width: 820px; margin-bottom: var(--space-2); }.pa-erp-scorecard-embed .last-updated{
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}.pa-erp-scorecard-embed .theme-toggle{
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  padding: var(--space-1) var(--space-2);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  transition: all var(--transition);
+}.pa-erp-scorecard-embed .theme-toggle:hover{ color: var(--text); border-color: var(--text-muted); }.pa-erp-scorecard-embed /* ---- Model Overview Grid ---- */
+.model-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}@media (max-width: 860px) {.pa-erp-scorecard-embed .model-grid{ grid-template-columns: 1fr; }
+}.pa-erp-scorecard-embed .model-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition);
+}.pa-erp-scorecard-embed .model-card:hover{ border-color: var(--text-faint); }.pa-erp-scorecard-embed .model-card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}.pa-erp-scorecard-embed .model-card.openai::before{ background: var(--accent-openai); }.pa-erp-scorecard-embed .model-card.anthropic::before{ background: var(--accent-anthropic); }.pa-erp-scorecard-embed .model-card.google::before{ background: var(--accent-google); }.pa-erp-scorecard-embed .model-card .provider{
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-1);
+}.pa-erp-scorecard-embed .model-card.openai .provider{ color: var(--accent-openai); }.pa-erp-scorecard-embed .model-card.anthropic .provider{ color: var(--accent-anthropic); }.pa-erp-scorecard-embed .model-card.google .provider{ color: var(--accent-google); }.pa-erp-scorecard-embed .model-card .model-name{
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.01em;
+}.pa-erp-scorecard-embed .model-card .release-date{
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+}.pa-erp-scorecard-embed .spec-row{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-2) 0;
+  border-top: 1px solid var(--border-subtle);
+  font-size: var(--text-sm);
+  gap: var(--space-3);
+}.pa-erp-scorecard-embed .spec-row:last-child{ border-bottom: 1px solid var(--border-subtle); }.pa-erp-scorecard-embed .spec-label{ color: var(--text-muted); white-space:nowrap; }.pa-erp-scorecard-embed .spec-value{ font-weight: 600; font-family: var(--font-mono); font-size: var(--text-xs); text-align:right; }.pa-erp-scorecard-embed /* ---- Comparison Table ---- */
+.section-title{
+  font-size: var(--text-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.01em;
+}.pa-erp-scorecard-embed .comparison-wrapper{
+  overflow-x: auto;
+  margin-bottom: var(--space-8);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}.pa-erp-scorecard-embed .comparison-table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+  min-width: 1100px;
+}.pa-erp-scorecard-embed .comparison-table th{
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}.pa-erp-scorecard-embed .comparison-table td{
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}.pa-erp-scorecard-embed .comparison-table tr:last-child td{ border-bottom: none; }.pa-erp-scorecard-embed .comparison-table td:first-child{
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+  position: sticky;
+  left: 0;
+  background: var(--surface);
+}.pa-erp-scorecard-embed .comparison-table .mono{
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}.pa-erp-scorecard-embed .comparison-table .highlight{
+  font-weight: 600;
+  color: var(--text);
+}.pa-erp-scorecard-embed /* ---- Changelog ---- */
+.changelog{
+  margin-bottom: var(--space-8);
+}.pa-erp-scorecard-embed .changelog-entry{
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--border-subtle);
+  align-items: flex-start;
+}.pa-erp-scorecard-embed .changelog-entry:last-child{ border-bottom: none; }.pa-erp-scorecard-embed .changelog-date{
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+  white-space: nowrap;
+  min-width: 90px;
+  padding-top: 2px;
+}.pa-erp-scorecard-embed .changelog-content{
+  flex: 1;
+}.pa-erp-scorecard-embed .changelog-content .title{
+  font-weight: 600;
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-1);
+}.pa-erp-scorecard-embed .changelog-content .detail{
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.6;
+}.pa-erp-scorecard-embed .changelog-content .detail a{ color: var(--text-muted); }.pa-erp-scorecard-embed /* ---- Footer ---- */
+footer{
+  text-align: center;
+  padding: var(--space-8) 0 var(--space-4);
+  border-top: 1px solid var(--border-subtle);
+}.pa-erp-scorecard-embed footer a{
+  color: var(--text-faint);
+  text-decoration: none;
+  font-size: var(--text-xs);
+  transition: color var(--transition);
+}.pa-erp-scorecard-embed footer a:hover{ color: var(--text-muted); }.pa-erp-scorecard-embed /* ---- Tab nav ---- */
+.tab-nav{
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0;
+  overflow-x: auto;
+}.pa-erp-scorecard-embed .tab-btn{
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+}.pa-erp-scorecard-embed .tab-btn:hover{ color: var(--text); }.pa-erp-scorecard-embed .tab-btn.active{
+  color: var(--text);
+  border-bottom-color: var(--text);
+}.pa-erp-scorecard-embed .tab-panel{ display: none; }.pa-erp-scorecard-embed .tab-panel.active{ display: block; }.pa-erp-scorecard-embed .pill-row{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:var(--space-3); }.pa-erp-scorecard-embed .pill{
+  display:inline-block;
+  font-size:0.6875rem;
+  font-weight:600;
+  padding:2px 9px;
+  border-radius:999px;
+  background:var(--surface-3);
+  color:var(--text-muted);
+  border:1px solid var(--border);
+  white-space:nowrap;
+}.pa-erp-scorecard-embed .model-card.cat-a::before{ background: var(--accent-openai); }.pa-erp-scorecard-embed .model-card.cat-b::before{ background: var(--accent-anthropic); }.pa-erp-scorecard-embed .model-card.cat-c::before{ background: var(--accent-google); }.pa-erp-scorecard-embed .model-card.cat-a .provider{ color: var(--accent-openai); }.pa-erp-scorecard-embed .model-card.cat-b .provider{ color: var(--accent-anthropic); }.pa-erp-scorecard-embed .model-card.cat-c .provider{ color: var(--accent-google); }.pa-erp-scorecard-embed .undisclosed{ color: var(--text-faint); cursor: help; border-bottom: 1px dotted var(--text-faint); }.pa-erp-scorecard-embed .editor-note{ font-size: var(--text-sm); color: var(--text-muted); margin: var(--space-3) 0; }.pa-erp-scorecard-embed .view-link{ display:inline-block; font-size: var(--text-sm); color: var(--text); text-decoration:none; font-weight:600; margin-top:var(--space-2); }.pa-erp-scorecard-embed .view-link:hover{ text-decoration: underline; }.pa-erp-scorecard-embed .card-source{ font-size: var(--text-xs); color: var(--text-faint); margin-top: var(--space-2); }.pa-erp-scorecard-embed .card-source a{ color: var(--text-faint); }.pa-erp-scorecard-embed .deep-section{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6); }.pa-erp-scorecard-embed .deep-section h2{ font-size: var(--text-xl); margin-bottom: var(--space-1); }.pa-erp-scorecard-embed .program-subtitle{ color: var(--text-muted); font-size: var(--text-sm); margin-bottom: var(--space-5); }.pa-erp-scorecard-embed .field{ margin-bottom: var(--space-4); }.pa-erp-scorecard-embed .field-label{ display:block; font-size: var(--text-xs); text-transform:uppercase; letter-spacing:0.05em; color: var(--text-muted); font-weight:600; margin-bottom: var(--space-1); }.pa-erp-scorecard-embed .field ul{ padding-left: var(--space-5); }.pa-erp-scorecard-embed .field p{ font-size: var(--text-sm); line-height:1.6; }.pa-erp-scorecard-embed .sources-footer{ font-size: var(--text-xs); color: var(--text-faint); line-height:1.8; border-top:1px solid var(--border-subtle); padding-top: var(--space-4); margin-top: var(--space-4); }.pa-erp-scorecard-embed .sources-footer a{ color: var(--text-faint); }.pa-erp-scorecard-embed .dim{ color: var(--text-muted); font-size: var(--text-sm); }.pa-erp-scorecard-embed .insights-list{ display:flex; flex-direction:column; gap: var(--space-6); }.pa-erp-scorecard-embed .insight{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-6); }.pa-erp-scorecard-embed .insight h3{ font-size: var(--text-lg); margin-bottom: var(--space-3); letter-spacing:-0.01em; }.pa-erp-scorecard-embed .insight p{ font-size: var(--text-sm); line-height:1.7; color: var(--text-muted); margin-bottom: var(--space-3); }.pa-erp-scorecard-embed .insight p:last-child{ margin-bottom:0; }.pa-erp-scorecard-embed .insight .why-matters{ color: var(--text-faint); }.pa-erp-scorecard-embed .model-grid{ grid-template-columns: repeat(2, 1fr); }@media (max-width: 1100px) {.pa-erp-scorecard-embed .model-grid{ grid-template-columns: 1fr; } }
+
+
+</style>
+<div class="pa-erp-scorecard-embed" data-theme="dark">
+
+<!-- Dashboard: ERP Partner Program Scorecard. Data: /home/user/workspace/dashboards-2026-07/research/erp.json. Generated: 2026-07-03T12:52:00-04:00. Vendors: 10. -->
+<div class="dashboard">
+<div class="header">
+<div class="brand">PartnerAwesome</div>
+<div class="header-meta">
+<button aria-label="Switch theme" class="theme-toggle" data-theme-toggle="">
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+</button>
+</div>
+</div>
+<div class="dashboard-intro">
+<h1>ERP Partner Program Scorecard</h1>
+<p class="subtitle">Live comparison of revenue share, tiers, and program terms across the top 10 ERP vendor partner programs &mdash; refreshed twice weekly.</p>
+<span class="last-updated" id="lastUpdated">Updated: July 3, 2026</span>
+</div>
+
+<!-- Tab Navigation -->
+<nav class="tab-nav">
+<button class="tab-btn active" data-tab="overview">Overview</button>
+<button class="tab-btn" data-tab="comparison">Comparison</button>
+<button class="tab-btn" data-tab="deep-dive">Deep-Dive</button>
+<button class="tab-btn" data-tab="insights">Insights</button>
+<button class="tab-btn" data-tab="changelog">Changelog</button>
+</nav>
+
+<!-- Tab: Overview -->
+<div class="tab-panel active" id="tab-overview">
+<div class="model-grid">
+<div class="model-card cat-a">
+<div class="provider">NetSuite Solution Provider Program</div>
+<div class="model-name">NetSuite (Oracle)</div>
+<div class="release-date">Partner types: R / SI / ISV / Ref / OEM &middot; 5 tiers</div>
+<div class="pill-row"><span class="pill">Mid-market to Enterprise</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value">30–50%</span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">1,000+</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value">SDN: $3,000/year; SPP: no separate stated fee…</span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">Mid-market to Enterprise</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.netsuite.com/portal/partners/solution-program.shtml" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.netsuite.com/portal/partners/solution-program.shtml" target="_blank" rel="noopener">NetSuite Solution Provider Program overview</a></div>
+</div>
+<div class="model-card cat-b">
+<div class="provider">SAP PartnerEdge</div>
+<div class="model-name">SAP (Business One + S/4HANA)</div>
+<div class="release-date">Partner types: R / SI / ISV / OEM &middot; 4 tiers</div>
+<div class="pill-row"><span class="pill">Enterprise (S/4HANA)</span><span class="pill">SMB (Business One)</span><span class="pill">dual segment</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">25,000+ partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value">Sell/Service track: €3,700/year; Build track…</span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">Enterprise (S/4HANA) and SMB (Business…</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.sap.com/partners/partner-program.html" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.sap.com/partners/partner-program.html" target="_blank" rel="noopener">SAP Partner Program overview</a></div>
+</div>
+<div class="model-card cat-c">
+<div class="provider">Acumatica Partner Program</div>
+<div class="model-name">Acumatica</div>
+<div class="release-date">Partner types: R / ISV / OEM / Ref &middot; 6 tiers</div>
+<div class="pill-row"><span class="pill">Mid-market (SMB</span><span class="pill">mid-market cloud ERP)</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">500+ partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value">$0 — Acumatica explicitly markets &#x27;zero startup…</span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">Mid-market (SMB to mid-market cloud ERP)</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.acumatica.com/partners/" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.acumatica.com/partners/" target="_blank" rel="noopener">Acumatica Partners overview</a></div>
+</div>
+<div class="model-card cat-a">
+<div class="provider">Sage Partner Programme</div>
+<div class="model-name">Sage (Sage Intacct + Sage 200/300)</div>
+<div class="release-date">Partner types: R / SI / ISV / Ref &middot; 7 tiers</div>
+<div class="pill-row"><span class="pill">SMB to Mid-market</span><span class="pill">Sage Intacct skews mid-market</span><span class="pill">nonprofit</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">1,215+</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value">Sage Intacct: &#x27;single fee&#x27; model, amount not…</span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">SMB to Mid-market; Sage Intacct skews…</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.sage.com/en-us/partners/business-partners/" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.sage.com/en-us/partners/business-partners/" target="_blank" rel="noopener">Sage Business Partners overview</a></div>
+</div>
+<div class="model-card cat-b">
+<div class="provider">Microsoft AI Cloud Partner Program</div>
+<div class="model-name">Microsoft Dynamics 365 (Business Central + Finance &amp; Operations)</div>
+<div class="release-date">Partner types: R / SI / ISV / Ref &middot; 3 tiers</div>
+<div class="pill-row"><span class="pill">SMB (Business Central)</span><span class="pill">Enterprise (Finance &amp; Operations)</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">500,000+ partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value">Not a flat fee — gated by revenue thresholds;…</span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">SMB (Business Central) to Enterprise…</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://partner.microsoft.com/partnership/solutions-partner-program" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://partner.microsoft.com/partnership/solutions-partner-program" target="_blank" rel="noopener">Microsoft Solutions Partner Program</a></div>
+</div>
+<div class="model-card cat-c">
+<div class="provider">Odoo Partner Program</div>
+<div class="model-name">Odoo</div>
+<div class="release-date">Partner types: R / SI / ISV &middot; 2 tiers</div>
+<div class="pill-row"><span class="pill">SMB to Mid-market</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value">10% commission on Odoo license sales and…</span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">9,500 partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value">Learning tier: $990/year; Official tier:…</span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">SMB to Mid-market</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.odoo.com/partners" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.odoo.com/partners" target="_blank" rel="noopener">Odoo Partners page</a></div>
+</div>
+<div class="model-card cat-a">
+<div class="provider">Infor Partner Network</div>
+<div class="model-name">Infor (CloudSuite)</div>
+<div class="release-date">Partner types: R / SI / ISV &middot; 3 tiers</div>
+<div class="pill-row"><span class="pill">Vertical-specific</span><span class="pill">manufacturing</span><span class="pill">distribution</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value">Gold tier: 40% commission on first-year…</span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">770 partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">Vertical-specific — manufacturing,…</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.infor.com/partners" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.infor.com/partners" target="_blank" rel="noopener">Infor Partners overview</a></div>
+</div>
+<div class="model-card cat-b">
+<div class="provider">Epicor Partner Community</div>
+<div class="model-name">Epicor (Kinetic + Prophet 21)</div>
+<div class="release-date">Partner types: R / SI / ISV / Ref &middot; 4 tiers</div>
+<div class="pill-row"><span class="pill">Vertical-specific</span><span class="pill">manufacturing (Kinetic)</span><span class="pill">wholesale distribution (Prophet 21)</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">400+ partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">Vertical-specific — manufacturing…</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.epicor.com/en-us/partners/" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.epicor.com/en-us/partners/" target="_blank" rel="noopener">Epicor Partners overview (official page, fetched directly)</a></div>
+</div>
+<div class="model-card cat-c">
+<div class="provider">Priority Software Global Partner Network</div>
+<div class="model-name">Priority Software</div>
+<div class="release-date">Partner types: R / SI / ISV &middot; 1 tier</div>
+<div class="pill-row"><span class="pill">SMB to Mid-market</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">100+ partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">SMB to Mid-market</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.priority-software.com/partners/" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.priority-software.com/partners/" target="_blank" rel="noopener">Priority Software Partners overview</a></div>
+</div>
+<div class="model-card cat-a">
+<div class="provider">Deltek Solutions Partner Program</div>
+<div class="model-name">Deltek</div>
+<div class="release-date">Partner types: SI / ISV / Ref &middot; 1 tier</div>
+<div class="pill-row"><span class="pill">Vertical-specific</span><span class="pill">project-based businesses: government contractors</span><span class="pill">A/E/C firms</span></div>
+<div class="spec-row"><span class="spec-label">Revenue share</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Ecosystem size</span><span class="spec-value">200+ partners</span></div>
+<div class="spec-row"><span class="spec-label">Annual fee</span><span class="spec-value"><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></span></div>
+<div class="spec-row"><span class="spec-label">Best-fit ICP</span><span class="spec-value">Vertical-specific — project-based…</span></div>
+<p class="editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<a class="view-link" href="https://www.deltek.com/en/partners" target="_blank" rel="noopener">View partner program &rarr;</a>
+<div class="card-source">Source: <a href="https://www.deltek.com/en/partners" target="_blank" rel="noopener">Deltek Partners overview</a></div>
+</div>
+</div>
+</div>
+
+<!-- Tab: Comparison -->
+<div class="tab-panel" id="tab-comparison">
+<h2 class="section-title">Side-by-Side Comparison</h2>
+<div class="comparison-wrapper">
+<table class="comparison-table">
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Program name</th>
+<th>Partner types</th>
+<th>Tier count</th>
+<th>Revenue share range</th>
+<th>Deal reg</th>
+<th>MDF</th>
+<th>Cert cost</th>
+<th>Annual fee</th>
+<th>Ecosystem size</th>
+<th>Best-fit ICP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="highlight">NetSuite (Oracle)</td>
+<td>NetSuite Solution Provider Program (SPP); SuiteCloud…</td>
+<td class="mono">R / SI / ISV / Ref / OEM</td>
+<td class="mono">5</td>
+<td>30–50%</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>SDN annual membership fee $3,000/year; SPP…</td>
+<td>SDN: $3,000/year; SPP: no separate stated fee…</td>
+<td>1,000+</td>
+<td>Mid-market to Enterprise</td>
+</tr>
+<tr>
+<td class="highlight">SAP (Business One + S/4HANA)</td>
+<td>SAP PartnerEdge</td>
+<td class="mono">R / SI / ISV / OEM</td>
+<td class="mono">4</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not separately priced; SAP Learning Hub partner…</td>
+<td>Sell/Service track: €3,700/year; Build track…</td>
+<td>25,000+ partners</td>
+<td>Enterprise (S/4HANA) and SMB (Business One)…</td>
+</tr>
+<tr>
+<td class="highlight">Acumatica</td>
+<td>Acumatica Partner Program (VAR Program + Alliance…</td>
+<td class="mono">R / ISV / OEM / Ref</td>
+<td class="mono">6</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>Yes &mdash; Leads registered via Alliance portal…</td>
+<td>Yes</td>
+<td>Free — no fees for training/badges (Sales…</td>
+<td>$0 — Acumatica explicitly markets &#x27;zero startup…</td>
+<td>500+ partners</td>
+<td>Mid-market (SMB to mid-market cloud ERP)</td>
+</tr>
+<tr>
+<td class="highlight">Sage (Sage Intacct + Sage 200/300)</td>
+<td>Sage Partner Programme (resellers, Sage 200/300);…</td>
+<td class="mono">R / SI / ISV / Ref</td>
+<td class="mono">7</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>No</td>
+<td>Yes</td>
+<td>Development Partner Program (ISV) fees: Silver…</td>
+<td>Sage Intacct: &#x27;single fee&#x27; model, amount not…</td>
+<td>1,215+</td>
+<td>SMB to Mid-market; Sage Intacct skews…</td>
+</tr>
+<tr>
+<td class="highlight">Microsoft Dynamics 365 (Business Central + Finance &amp; Operations)</td>
+<td>Microsoft AI Cloud Partner Program (MAICPP) — Cloud…</td>
+<td class="mono">R / SI / ISV / Ref</td>
+<td class="mono">3</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>Yes &mdash; Managed via Microsoft co-sell and…</td>
+<td>Yes</td>
+<td>Individual Microsoft Certified: Dynamics 365…</td>
+<td>Not a flat fee — gated by revenue thresholds;…</td>
+<td>500,000+ partners</td>
+<td>SMB (Business Central) to Enterprise…</td>
+</tr>
+<tr>
+<td class="highlight">Odoo</td>
+<td>Odoo Partner Program</td>
+<td class="mono">R / SI / ISV</td>
+<td class="mono">2</td>
+<td>10% commission on Odoo license sales and…</td>
+<td>Yes</td>
+<td>No</td>
+<td>Included in Learning ($990/year) or Official…</td>
+<td>Learning tier: $990/year; Official tier:…</td>
+<td>9,500 partners</td>
+<td>SMB to Mid-market</td>
+</tr>
+<tr>
+<td class="highlight">Infor (CloudSuite)</td>
+<td>Infor Partner Network (IPN)</td>
+<td class="mono">R / SI / ISV</td>
+<td class="mono">3</td>
+<td>Gold tier: 40% commission on first-year…</td>
+<td>Yes</td>
+<td>Yes</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>770 partners</td>
+<td>Vertical-specific — manufacturing,…</td>
+</tr>
+<tr>
+<td class="highlight">Epicor (Kinetic + Prophet 21)</td>
+<td>Epicor Partner Community (Sell / Service / Refer /…</td>
+<td class="mono">R / SI / ISV / Ref</td>
+<td class="mono">4</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>Yes</td>
+<td>Yes</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>400+ partners</td>
+<td>Vertical-specific — manufacturing (Kinetic)…</td>
+</tr>
+<tr>
+<td class="highlight">Priority Software</td>
+<td>Priority Software Global Partner Network</td>
+<td class="mono">R / SI / ISV</td>
+<td class="mono">1</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>No</td>
+<td>No</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>100+ partners</td>
+<td>SMB to Mid-market</td>
+</tr>
+<tr>
+<td class="highlight">Deltek</td>
+<td>Deltek Solutions Partner Program (plus CPA Partner…</td>
+<td class="mono">SI / ISV / Ref</td>
+<td class="mono">1</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>Yes</td>
+<td>No</td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></td>
+<td>200+ partners</td>
+<td>Vertical-specific — project-based…</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="dim" style="margin-bottom:var(--space-8);font-size:var(--text-xs);">Partner types: R = Reseller/VAR, SI = Systems Integrator/Implementation, ISV = Independent Software Vendor, Ref = Referral, OEM = OEM. Fields marked &mdash; are not publicly disclosed by the vendor; hover for details. Full detail and sources in the Deep-Dive tab.</p>
+</div>
+
+<!-- Tab: Deep-Dive -->
+<div class="tab-panel" id="tab-deep-dive">
+<h2 class="section-title">Vendor Deep-Dive</h2>
+<section class="deep-section" id="deep-netsuite">
+<h2>NetSuite (Oracle)</h2>
+<p class="program-subtitle">NetSuite Solution Provider Program (SPP); SuiteCloud Developer Network (SDN) for ISVs; Alliance Partner Program; BPO Partners</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.netsuite.com/portal/partners/solution-program.shtml" target="_blank" rel="noopener">https://www.netsuite.com/portal/partners/solution-program.shtml</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, SI / Implementation, ISV / Development, Referral, OEM</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Authorized/Silver</li><li>Gold</li><li>Platinum (informal &#x27;5-Star/4-Star&#x27; naming used by third-party directories)</li><li>SDN: Select</li><li>SDN: Premier (invite-only)</li></ul></div>
+
+<div class="field"><span class="field-label">Revenue share range</span><p>30–50% margin on new license sales, 10–30% on renewal margin, ~15% on services/support</p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>Yes &mdash; Cooperative Marketing Funds available to Solution Provider partners per official program guide</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p>SDN annual membership fee $3,000/year; SPP certification/testing included in program benefits</p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p>SDN: $3,000/year; SPP: no separate stated fee but requires ~$100,000/year new license sales commitment</p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>1,000+ active Solution Provider partners worldwide; 43,000+ NetSuite customers in 220 countries</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global — Americas, EMEA, JAPAC</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>Mid-market to Enterprise</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">2025-10-07</div><div class="changelog-content"><div class="detail">NetSuite Expands Partner Program to Accelerate AI Innovation — launched SuiteApp.AI Marketplace and new AI Elite/AI badges for SDN partners &mdash; <a href="https://www.oracle.com/sg/news/announcement/sw25-netsuite-expands-partner-program-accelerate-ai-innovation-2025-10-06/" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.netsuite.com/portal/partners/solution-program.shtml" target="_blank" rel="noopener">NetSuite Solution Provider Program overview</a>, <a href="https://www.netsuite.com/portal/partners/become-a-partner.shtml" target="_blank" rel="noopener">NetSuite Become a Partner</a>, <a href="https://www.netsuite.com/portal/developers/sdn.shtml" target="_blank" rel="noopener">SuiteCloud Developer Network (SDN)</a>, <a href="https://www.netsuite.com/portal/assets/pdf/ds-ns-solution-provider-program-2.pdf" target="_blank" rel="noopener">NetSuite SPP official program guide (PDF)</a>, <a href="https://www.oracle.com/sg/news/announcement/sw25-netsuite-expands-partner-program-accelerate-ai-innovation-2025-10-06/" target="_blank" rel="noopener">Oracle: NetSuite Expands Partner Program to Accelerate AI Innovation (Oct 2025)</a>, <a href="https://www.erpresearch.com/netsuite-partners" target="_blank" rel="noopener">ERP Research: NetSuite Partners directory</a>, <a href="https://www.houseblend.io/articles/netsuite-partner-types-and-tiers" target="_blank" rel="noopener">houseblend.io: NetSuite partner types and tiers</a></p>
+</section>
+<section class="deep-section" id="deep-sap">
+<h2>SAP (Business One + S/4HANA)</h2>
+<p class="program-subtitle">SAP PartnerEdge</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.sap.com/partners/partner-program.html" target="_blank" rel="noopener">https://www.sap.com/partners/partner-program.html</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, SI / Implementation, ISV / Development, OEM</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Open Ecosystem (no-cost entry)</li><li>Silver</li><li>Gold</li><li>Platinum (invite-only)</li></ul></div>
+<div class="field"><span class="field-label">Program structure note</span><p>SAP PartnerEdge is organized into 4 engagement tracks rather than a single tier ladder: Sell (resellers/VARs), Build (OEM/ISV/app developers), Service (consultants/SIs), and Run (MSP/outsourcing, invite-only).</p></div>
+<div class="field"><span class="field-label">Revenue share range</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>Yes &mdash; SAP &#x27;development funds&#x27; available to Sell/Run/Build tracks — up to 100% funding for sales enablement, 100% for customer stories, up to 100% for partner recruitment, 50% for training/certification/coaching</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p>Not separately priced; SAP Learning Hub partner edition includes 4 exam attempts/year</p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p>Sell/Service track: €3,700/year; Build track only: €2,000/year (+€1,700 to add another track); Partner Grouping Agreement fees scale €4,200–€39,000 by entity count</p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>25,000+ partners worldwide (SAP News, Jan 2025); ~24,000 per Houlihan Lokey Oct 2024 report; 3,380+ verified listings in ERP Research directory</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global — particularly strong in EMEA</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>Enterprise (S/4HANA) and SMB (Business One) — dual segment</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">2025-01-16</div><div class="changelog-content"><div class="detail">SAP PartnerEdge Evolves for Cloud and AI Business — redesign toward 100% cloud focus with new AI adoption pillar &mdash; <a href="https://news.sap.com/2025/01/sap-partneredge-cloud-driven-business-in-ai-era/" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2025-05-23</div><div class="changelog-content"><div class="detail">Unstoppable Together: Partners Will Deliver the Promise of SAP Business Suite &mdash; <a href="https://news.sap.com/2025/05/partners-deliver-promise-sap-business-suite/" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2026-01-19</div><div class="changelog-content"><div class="detail">Updates to SAP&#x27;s Integration Certification Program for Partner-Built Solutions &mdash; <a href="https://news.sap.com/2026/01/updates-sap-integration-certification-program-partner-built-solutions/" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.sap.com/partners/partner-program.html" target="_blank" rel="noopener">SAP Partner Program overview</a>, <a href="https://partneredge.sap.com/content/dam/public/dni/pe_program_guide_preview.pdf" target="_blank" rel="noopener">SAP PartnerEdge Program Guide (PDF)</a>, <a href="https://news.sap.com/2025/01/sap-partneredge-cloud-driven-business-in-ai-era/" target="_blank" rel="noopener">SAP News: PartnerEdge Evolves for Cloud and AI Business</a>, <a href="https://news.sap.com/2025/05/partners-deliver-promise-sap-business-suite/" target="_blank" rel="noopener">SAP News: Partners Will Deliver the Promise of SAP Business Suite</a>, <a href="https://news.sap.com/2026/01/updates-sap-integration-certification-program-partner-built-solutions/" target="_blank" rel="noopener">SAP News: Updates to Integration Certification Program</a>, <a href="https://www.channelfutures.com/channel-business/sap-brings-new-tiers-engagement-models-to-partneredge-program" target="_blank" rel="noopener">Channel Futures: SAP Brings New Tiers, Engagement Models to PartnerEdge</a>, <a href="https://www.erpresearch.com/sap-partners" target="_blank" rel="noopener">ERP Research: SAP Partners directory</a></p>
+</section>
+<section class="deep-section" id="deep-acumatica">
+<h2>Acumatica</h2>
+<p class="program-subtitle">Acumatica Partner Program (VAR Program + Alliance Program)</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.acumatica.com/partners/" target="_blank" rel="noopener">https://www.acumatica.com/partners/</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, ISV / Development, OEM, Referral</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>VAR: Silver</li><li>VAR: Gold</li><li>Alliance: Bronze</li><li>Alliance: Silver</li><li>Alliance: Gold</li><li>Alliance: Platinum</li></ul></div>
+
+<div class="field"><span class="field-label">Revenue share range</span><p>Not disclosed as a fixed public %; described as &#x27;some of the most generous margins in the industry&#x27;. Alliance Program referral fee: flat 15% across all tiers (2024 guide). Partner Referral Program: minimum 5% recurring referral fee.</p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes &mdash; Leads registered via Alliance portal must convert within 1 year</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>Yes &mdash; No explicitly named &#x27;MDF&#x27; fund on public pages, but 2026 CRN guide cites &#x27;incremental investment in MDF&#x27;; core lead-sharing model distributes 100% of generated leads to partners</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p>Free — no fees for training/badges (Sales Consultant, Pre-Sales Engineer, Business Consultant, etc.)</p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p>$0 — Acumatica explicitly markets &#x27;zero startup or annual fees&#x27; versus competitors&#x27; $7,500–$14,000</p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>500+ total partners (Acumatica CEO 2025 year-in-review); ~350-450 VARs specifically per multiple sources; 10,000+ customers (EQT/Vista press release, May 2025)</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Americas, Africa, Europe, Southeast Asia, Middle East</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>Mid-market (SMB to mid-market cloud ERP)</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">2026-02-26</div><div class="changelog-content"><div class="detail">2026 CRN Partner Program Guide entry: launched new tiering program, new logo-source program, AI-powered instructor-led training modules, Partner Elevate Americas/International events (100+ partners), incremental MDF investment, focus on distribution model in key countries &mdash; <a href="https://www.crn.com/news/channel-news/2026/5-star-software-vendor-programs" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2025-05-29</div><div class="changelog-content"><div class="detail">EQT sold Acumatica to Vista Equity Partners following a &#x27;transformational growth journey&#x27; — ownership change likely to affect future partner investment &mdash; <a href="https://eqtgroup.com/en/news/eqt-to-sell-acumatica-to-vista-equity-partners-following-transformational-growth-journey-2025-05-29" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.acumatica.com/partners/" target="_blank" rel="noopener">Acumatica Partners overview</a>, <a href="https://www.acumatica.com/partners/var/" target="_blank" rel="noopener">Acumatica VAR Program</a>, <a href="https://www.acumatica.com/partners/alliance/" target="_blank" rel="noopener">Acumatica Alliance Program</a>, <a href="https://www.acumatica.com/media/2024/09/Acumatica-Alliance-Program-Guide-FNL-July-2024.pdf" target="_blank" rel="noopener">Acumatica Alliance Program Guide (PDF, 2024)</a>, <a href="https://www.acumatica.com/media/2020/08/Acumatica-Partner-Referral-Program-Datasheet-08.25.2020.pdf" target="_blank" rel="noopener">Acumatica Partner Referral Program Datasheet (PDF)</a>, <a href="https://www.acumatica.com/blog/the-acumatica-ecosystem-a-place-where-partners-can-thrive/" target="_blank" rel="noopener">Acumatica blog: The Acumatica Ecosystem — zero fees</a>, <a href="https://www.cimdata.com/zh/industry-summary-articles/item/29570" target="_blank" rel="noopener">CIMdata: Acumatica CEO 2025 year-in-review</a>, <a href="https://eqtgroup.com/en/news/eqt-to-sell-acumatica-to-vista-equity-partners-following-transformational-growth-journey-2025-05-29" target="_blank" rel="noopener">EQT: Sale of Acumatica to Vista Equity Partners</a>, <a href="https://www.crn.com/news/channel-news/2026/5-star-software-vendor-programs" target="_blank" rel="noopener">CRN 2026 Partner Program Guide: 5-Star Software Vendor Programs</a></p>
+</section>
+<section class="deep-section" id="deep-sage">
+<h2>Sage (Sage Intacct + Sage 200/300)</h2>
+<p class="program-subtitle">Sage Partner Programme (resellers, Sage 200/300); Sage Intacct Partner Network (separate track)</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.sage.com/en-us/partners/business-partners/" target="_blank" rel="noopener">https://www.sage.com/en-us/partners/business-partners/</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, SI / Implementation, ISV / Development, Referral</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Authorized</li><li>Silver</li><li>Gold</li><li>Platinum</li><li>ISV track: Developer (Silver-equivalent)</li><li>ISV track: Champion (Gold-equivalent)</li><li>ISV track: Rockstar (invite-only, Endorsed)</li></ul></div>
+<div class="field"><span class="field-label">Program structure note</span><p>Standard 4-tier reseller ladder (Authorized/Silver/Gold/Platinum) standardized globally since 2015. Sage Intacct explicitly markets a &#x27;single fee, no sales tiers&#x27; model, distinct from the tiered Sage 200/300 reseller track.</p></div>
+<div class="field"><span class="field-label">Revenue share range</span><p><span class="undisclosed" title="Not publicly disclosed on official pages. Third-party source cites ~30% partner commission for approved Sage Intacct VARs under private agreement; Sage Referral Network pays 10% of first-year net spend.">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>No</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>Yes &mdash; Marketing Development Funds (MDF) explicitly named in Sage&#x27;s French Partner Program brochure; details on earning criteria not public in English-language materials</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p>Development Partner Program (ISV) fees: Silver $350 signup / $250 renewal; Gold $800/$700 (Category 1) or $2,000–$3,000/$1,000–$2,000 (Category 2, higher for ERP product lines)</p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p>Sage Intacct: &#x27;single fee&#x27; model, amount not publicly disclosed; ISV Development Partner fees as listed above</p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>1,215+ verified partners per ERP Research directory; Sage markets &#x27;thousands of partners&#x27; globally; historical figure of 3+ million Sage customers worldwide</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global — strong presence in UK/EMEA, North America, Africa</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>SMB to Mid-market; Sage Intacct skews mid-market, nonprofit, and professional services verticals</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">n.a.</div><div class="changelog-content"><div class="detail">No specific dated 2025-2026 program announcements found on public sources during this research; general market trend toward cloud/Sage Intacct focus observed but not tied to a specific press release &mdash; <a href="https://www.sage.com/en-us/partners/business-partners/" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.sage.com/en-us/partners/business-partners/" target="_blank" rel="noopener">Sage Business Partners overview</a>, <a href="https://www.sage.com/en-us/sage-business-cloud/intacct/partners/" target="_blank" rel="noopener">Sage Intacct Partners</a>, <a href="https://www.erpresearch.com/sage-partners" target="_blank" rel="noopener">ERP Research: Sage Partners directory</a>, <a href="http://www.sage.com/na/~/media/Category/SNA/Assets/Documents/Sage_Development_Partner_Overview.pdf" target="_blank" rel="noopener">Sage Development Partner Program overview (PDF)</a>, <a href="https://pdfs.semanticscholar.org/c273/c00eccd235219c8cf97c9487d4ec3d04fd56.pdf" target="_blank" rel="noopener">Sage Development Partner fee schedule (PDF via Semantic Scholar)</a>, <a href="https://www.itpro.com/cloud/cloud-computing/365516/sage-debuts-simplified-partner-programme" target="_blank" rel="noopener">ITPro: Sage debuts simplified partner programme</a>, <a href="https://cashflowfrog.com/partners-sage-intacct/" target="_blank" rel="noopener">cashflowfrog.com: Sage Intacct partner commission structure</a>, <a href="https://www.sage.com/fr-fr/-/media/images/sagedotcom/france/fr-fr/pdf/partenaires/brochure-sage-partner-program%20pdf.pdf" target="_blank" rel="noopener">Sage Partner Program brochure (French, MDF reference, PDF)</a>, <a href="https://www.utilize.co.uk/sage-intacct/referral/" target="_blank" rel="noopener">Utilize: Sage Intacct Referral Network</a></p>
+</section>
+<section class="deep-section" id="deep-microsoft-dynamics-365">
+<h2>Microsoft Dynamics 365 (Business Central + Finance &amp; Operations)</h2>
+<p class="program-subtitle">Microsoft AI Cloud Partner Program (MAICPP) — Cloud Solution Provider (CSP) model + Solutions Partner for Business Applications designation</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://partner.microsoft.com/partnership/solutions-partner-program" target="_blank" rel="noopener">https://partner.microsoft.com/partnership/solutions-partner-program</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, SI / Implementation, ISV / Development, Referral</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Cloud Solution Provider (CSP): Indirect Reseller (no revenue minimum) / Direct Bill (requires $1M trailing-12-month revenue in FY26)</li><li>Solutions Partner designations across 6 solution areas (incl. Business Applications for Dynamics 365/Power Platform), each requiring a Partner Capability Score of 70/100</li><li>System Integrator (SI) and Managed Service Provider (MSP) tracks with their own incentive programs</li></ul></div>
+<div class="field"><span class="field-label">Program structure note</span><p>Microsoft retired the old Gold/Silver competency model in October 2022 in favor of solution-area &#x27;Solutions Partner&#x27; designations (e.g., Solutions Partner for Business Applications) earned via performance, skilling, and customer success points rather than a linear tier ladder.</p></div>
+<div class="field"><span class="field-label">Revenue share range</span><p><span class="undisclosed" title="Not publicly disclosed as a single flat percentage; MSPs can earn Partner Earned Credit (PEC) of 15% of managed Azure consumption; CSP margins vary by license type; Dynamics-specific commission structure not separately published">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes &mdash; Managed via Microsoft co-sell and referral programs; specific protection period not publicly disclosed</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>Yes &mdash; MDF available through the Partner Incentives program, tied to designation level and co-sell performance</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p>Individual Microsoft Certified: Dynamics 365 exams typically ~$165 USD each; partner-level designation requires accumulated certifications rather than a flat program fee</p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p>Not a flat fee — gated by revenue thresholds; Direct Bill CSP requires $1M+ trailing-12-month cloud revenue in FY26 (raised from a prior ~$300K/year bar), per Novistra Capital ecosystem report</p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>500,000+ partners across the overall Microsoft Cloud Partner Program ecosystem (not Dynamics-specific); more than 1,500 partner businesses hold Microsoft&#x27;s diverse/minority-owned certification (per CRN)</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>SMB (Business Central) to Enterprise (Finance &amp; Operations)</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">2025-03-24</div><div class="changelog-content"><div class="detail">Microsoft at 50 blog detailed current partner ecosystem structure: ISV Success pathway for software companies, Solutions Partner designations and specializations tied to go-to-market resources and incentives &mdash; <a href="https://blogs.microsoft.com/blog/2025/03/24/microsoft-at-50-the-journey-and-future-of-the-partner-ecosystem/" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2025-12</div><div class="changelog-content"><div class="detail">Novistra Capital ecosystem report: Microsoft tripled the minimum trailing-12-month revenue bar for Direct CSP partners to $1 million/year (from ~$300K) and added mandatory &#x27;Solutions Partner&#x27; designation requirements in areas like Security and Modern Work &mdash; <a href="https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2026 (FY26)</div><div class="changelog-content"><div class="detail">Microsoft AI Cloud Partner Program added high-value specializations (Copilot, Sovereign Cloud) and boosted co-sell incentives — 50% more Copilot funding and 70% more Azure Accelerate investment for FY26 &mdash; <a href="https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2026-04-08</div><div class="changelog-content"><div class="detail">Microsoft Tech Community post on the growth engine for partners: Business Central, AI, and partner-to-partner (P2P) motions as a new focus area for MSPs and Business Applications partners &mdash; <a href="https://techcommunity.microsoft.com/blog/partnernews/ep-38--the-new-growth-engine-for-microsoft-partners-business-central-ai-and-p2p-/4504512" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://partner.microsoft.com/partnership/solutions-partner-program" target="_blank" rel="noopener">Microsoft Solutions Partner Program</a>, <a href="https://partner.microsoft.com/" target="_blank" rel="noopener">Microsoft Partner Center</a>, <a href="https://www.aicloudpartners.com/guides/microsoft-partner-program-guide.html" target="_blank" rel="noopener">AI Cloud Partners: Microsoft Partner Program 2026 Guide</a>, <a href="https://blogs.microsoft.com/blog/2025/03/24/microsoft-at-50-the-journey-and-future-of-the-partner-ecosystem/" target="_blank" rel="noopener">Microsoft Official Blog: Microsoft at 50 — partner ecosystem</a>, <a href="https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf" target="_blank" rel="noopener">Novistra Capital: Microsoft Service Partner Ecosystem M&amp;A report (PDF)</a>, <a href="https://www.crn.com/news/cloud/microsoft-state-of-the-partner-ecosystem-5-things-to-know" target="_blank" rel="noopener">CRN: Microsoft State of the Partner Ecosystem — 5 Things to Know</a>, <a href="https://techcommunity.microsoft.com/blog/partnernews/ep-38--the-new-growth-engine-for-microsoft-partners-business-central-ai-and-p2p-/4504512" target="_blank" rel="noopener">Microsoft Tech Community: New growth engine for partners (Apr 2026)</a></p>
+</section>
+<section class="deep-section" id="deep-odoo">
+<h2>Odoo</h2>
+<p class="program-subtitle">Odoo Partner Program</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.odoo.com/partners" target="_blank" rel="noopener">https://www.odoo.com/partners</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, SI / Implementation, ISV / Development</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Learning ($990/year)</li><li>Official ($3,950/year) with Ready / Silver / Gold sub-tiers</li></ul></div>
+
+<div class="field"><span class="field-label">Revenue share range</span><p>10% commission on Odoo license sales and Odoo.sh at Learning tier; rising to 20% on licenses and 50% on Odoo.sh at Official tier (per Odoo partner training video). Tier progression requires 10 users/year (Ready), 75 users/year + 3 certified staff + 70% retention (Silver), 300 users/year + 6 certified staff + 80% retention (Gold).</p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>No &mdash; No public evidence of a formal MDF program; partner benefits center on training credits and lead sharing instead</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p>Included in Learning ($990/year) or Official ($3,950/year) partnership fee</p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p>Learning tier: $990/year; Official tier: $3,950/year</p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>Reported figures vary significantly by source and date: ~9,500 partners (Apr 2025, Odoo Partnerships &amp; Alliances via LinkedIn); 11,291 partners (Sep 2025, Odoo Unlocked #012); 10,000+ partners cited at OXP 2025 event; 3,980 publicly listed/certified partners across 226 countries as of Mar 2026 (JustDoers directory), which is described as roughly one-third of the full network since thousands remain in the unlisted &#x27;Learning&#x27; tier.</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global — strong presence in Europe (Belgium HQ), growing in North America and Asia</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>SMB to Mid-market</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">2025-09-29</div><div class="changelog-content"><div class="detail">Odoo reported partner network growth to 11,291 partners worldwide (252 Gold, 633 Silver, 2,689 Ready, with the balance in Learning tier) per Odoo Unlocked newsletter &mdash; <a href="https://odoounlocked.justdoers.com/p/odoo-unlocked-012-let-s-talk-about-numbers" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2026-02-12</div><div class="changelog-content"><div class="detail">Odoo added ~600 new service partners over the prior year, a 32% year-over-year expansion, per Alten Capital ecosystem analysis &mdash; <a href="https://alten.capital/blog/odoo-services-partner-ecosystem-update" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2026-03-22</div><div class="changelog-content"><div class="detail">Public partner directory reached 3,980 listed partners with 71,408 total client references and 1,157,204 total seats, per JustDoers Odoo Partners Directory &mdash; <a href="https://www.justdoers.com/odoo-partners-directory" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.odoo.com/partners" target="_blank" rel="noopener">Odoo Partners page</a>, <a href="https://odoounlocked.justdoers.com/p/odoo-unlocked-011-the-evolving-partner-landscape" target="_blank" rel="noopener">Odoo Unlocked #011: The Evolving Partner Landscape</a>, <a href="https://odoounlocked.justdoers.com/p/odoo-unlocked-012-let-s-talk-about-numbers" target="_blank" rel="noopener">Odoo Unlocked #012: Let&#x27;s Talk About Numbers</a>, <a href="https://alten.capital/blog/odoo-services-partner-ecosystem" target="_blank" rel="noopener">Alten Capital: Odoo Services Partner Ecosystem</a>, <a href="https://alten.capital/blog/odoo-services-partner-ecosystem-update" target="_blank" rel="noopener">Alten Capital: Odoo Services Partner Ecosystem Update (2026)</a>, <a href="https://www.justdoers.com/odoo-partners-directory" target="_blank" rel="noopener">JustDoers: Odoo Partners Directory</a>, <a href="https://www.linkedin.com/posts/swagon_there-are-9500-odoo-partners-worldwide-as-activity-7325494865893498882-r6fE" target="_blank" rel="noopener">LinkedIn: Sarah Wagon — 9,500 Odoo partners worldwide (Apr 2025)</a>, <a href="https://www.youtube.com/watch?v=LYsD1EaE1pA" target="_blank" rel="noopener">Odoo Partnership Program: Where to Start (YouTube, commission structure detail)</a></p>
+</section>
+<section class="deep-section" id="deep-infor">
+<h2>Infor (CloudSuite)</h2>
+<p class="program-subtitle">Infor Partner Network (IPN)</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.infor.com/partners" target="_blank" rel="noopener">https://www.infor.com/partners</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, SI / Implementation, ISV / Development</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Associate</li><li>Silver</li><li>Gold</li></ul></div>
+
+<div class="field"><span class="field-label">Revenue share range</span><p>Gold tier: 40% commission on first-year cloud contract value, 25% every year thereafter as long as customer remains on board (per Diginomica 2016 reporting on Infor Partner Network economics — structure referenced as still broadly representative but should be reconfirmed against current IPN fact sheet)</p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>Yes &mdash; Market Development Funding (MDF) program explicitly named as part of IPN&#x27;s tiered support structure, intended to help partners invest back into their businesses (per original 2011 IPN launch coverage); current earning criteria not confirmed in this research pass</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p><span class="undisclosed" title="Not publicly disclosed as a flat figure">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>~770 certified partners (per research summary; cite Infor Partner Network directory)</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global, with strength in manufacturing and distribution verticals</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>Vertical-specific — manufacturing, distribution, healthcare, fashion (Infor CloudSuite industry focus)</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">n.a.</div><div class="changelog-content"><div class="detail">No specific dated 2025-2026 IPN program announcement located in this research pass; program structure (Associate/Silver/Gold tiers) traces back to a 2011 relaunch and has not been reported as substantially restructured since &mdash; <a href="https://webassets.infor.com/images/ipn-fact-sheet.pdf?v=1536324998" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.infor.com/partners" target="_blank" rel="noopener">Infor Partners overview</a>, <a href="https://webassets.infor.com/images/ipn-fact-sheet.pdf?v=1536324998" target="_blank" rel="noopener">Infor Partner Network Fact Sheet (PDF)</a>, <a href="https://www.crn.com/news/channel-programs/230500015/infor-develops-new-program-standard-contracts-for-its-channel-partners" target="_blank" rel="noopener">CRN: Infor Develops New Program, Standard Contracts for Channel Partners (2011)</a>, <a href="https://diginomica.com/briefing-review-can-infors-partner-strategy-keep-pace-with-its-digital-pursuits" target="_blank" rel="noopener">Diginomica: Briefing review — can Infor&#x27;s partner strategy keep pace? (Gold commission detail)</a>, <a href="https://channellife.co.nz/story/commission-bonuses-offered-by-infor-partner-network" target="_blank" rel="noopener">ChannelLife NZ: Commission, bonuses offered by Infor Partner Network</a></p>
+</section>
+<section class="deep-section" id="deep-epicor">
+<h2>Epicor (Kinetic + Prophet 21)</h2>
+<p class="program-subtitle">Epicor Partner Community (Sell / Service / Refer / Develop tracks); tiered Certified Partner Program for Sales/Reseller partners (Silver/Gold/Platinum)</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.epicor.com/en-us/partners/" target="_blank" rel="noopener">https://www.epicor.com/en-us/partners/</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR (Sell), SI / Implementation (Service), ISV / Development (Develop), Referral (Refer)</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Authorized</li><li>Silver</li><li>Gold</li><li>Platinum</li></ul></div>
+
+<div class="field"><span class="field-label">Revenue share range</span><p><span class="undisclosed" title="Not publicly disclosed as a current fixed percentage. Historical reporting (2016, ChannelLife NZ) cited margins from ~15-20% for referral-style partners up to ~45% for top-performing partners running full sales/marketing operations. Certified tier thresholds (2WTech, 2023): Platinum requires &gt;$2.09M in annual Epicor revenue + 14 dedicated sales/marketing staff; Gold requires &gt;$1.045M + 9 staff; Silver requires $605K–$1.045M + 1 staff.">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>Yes &mdash; MDF referenced in Epicor&#x27;s historical three-tiered &#x27;Partners for Growth&#x27; incentive program (2008) as &#x27;direct reimbursement on marketing development funds&#x27;; not confirmed as still named this way in current program materials</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p><span class="undisclosed" title="Not publicly disclosed; Epicor Certified Partner status requires completing and maintaining a required number of Epicor product certifications, renewed annually">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>400+ partners (per research summary)</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global, with strength in manufacturing and distribution (Kinetic) and wholesale distribution (Prophet 21)</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>Vertical-specific — manufacturing (Kinetic) and wholesale distribution (Prophet 21), SMB to Mid-market</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">n.a.</div><div class="changelog-content"><div class="detail">Epicor&#x27;s official partner page (fetched directly) organizes partners into four relationship types — Sell (Reseller), Service, Refer, and Develop (ISV) — with no dated 2025-2026 restructuring announcement found &mdash; <a href="https://www.epicor.com/en-us/partners/" target="_blank" rel="noopener">source</a></div></div></div>
+<div class="changelog-entry"><div class="changelog-date">2026-03-25</div><div class="changelog-content"><div class="detail">Epicor promoted its Channel Partner Community recruitment on LinkedIn, indicating active partner recruitment push &mdash; <a href="https://www.linkedin.com/posts/epicor_join-our-channel-partner-community-activity-7442646049783029760-ddts" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.epicor.com/en-us/partners/" target="_blank" rel="noopener">Epicor Partners overview (official page, fetched directly)</a>, <a href="https://www.epicor.com/en-us/partners/channel-partners/" target="_blank" rel="noopener">Epicor Channel Partners</a>, <a href="https://www.epicor.com/en-us/partners/authorized-channel-partners/" target="_blank" rel="noopener">Epicor Authorized Channel Partners</a>, <a href="https://2wtech.com/understanding-the-epicor-certified-partner-program-levels/" target="_blank" rel="noopener">2WTech: Understanding the Epicor Certified Partner Program Levels</a>, <a href="https://channellife.co.nz/story/epicor-turns-partner-program-its-head-open-new-niche-markets" target="_blank" rel="noopener">ChannelLife NZ: Epicor turns partner program on its head (2016)</a>, <a href="https://www.varinsights.com/doc/epicor-announces-three-tiered-channel-partner-0001" target="_blank" rel="noopener">Varinsights: Epicor Announces Three-Tiered Channel Partner Incentive Program (2008)</a>, <a href="https://www.tahawultech.com/features/fresh-take/" target="_blank" rel="noopener">TahawulTech: Epicor&#x27;s El Komy on doubling channel sales (2017)</a>, <a href="https://www.linkedin.com/posts/epicor_join-our-channel-partner-community-activity-7442646049783029760-ddts" target="_blank" rel="noopener">LinkedIn: Epicor — Join Our Channel Partner Community</a></p>
+</section>
+<section class="deep-section" id="deep-priority-software">
+<h2>Priority Software</h2>
+<p class="program-subtitle">Priority Software Global Partner Network</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.priority-software.com/partners/" target="_blank" rel="noopener">https://www.priority-software.com/partners/</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>Reseller / VAR, SI / Implementation, ISV / Development</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Not publicly segmented into named tiers based on research found</li></ul></div>
+
+<div class="field"><span class="field-label">Revenue share range</span><p><span class="undisclosed" title="Not publicly disclosed as a percentage. Priority&#x27;s official partner page confirms &#x27;a rewarding revenue-sharing scheme on software fees&#x27; plus &#x27;100% services fees retention&#x27; for partners, but publishes no specific rate.">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>No</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>No &mdash; No public evidence of a formal MDF program found in this research pass</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>100+ partners across 70 countries (per research summary)</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global — notable presence in Israel (HQ), North America, Europe</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>SMB to Mid-market</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">2025-04-23</div><div class="changelog-content"><div class="detail">Official &#x27;Become a Partner&#x27; page (last updated per page metadata) emphasizes global growth journey positioning, incentives for new territories/verticals, and 100% services fee retention for VAR partners — no tier structure or specific rates disclosed publicly &mdash; <a href="https://www.priority-software.com/become-a-partner/" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.priority-software.com/partners/" target="_blank" rel="noopener">Priority Software Partners overview</a>, <a href="https://www.priority-software.com/become-a-partner/" target="_blank" rel="noopener">Priority Software: Become a Partner (official page, fetched directly)</a>, <a href="https://market.priority-software.com/become-vendor/" target="_blank" rel="noopener">Priority Software Marketplace: Become a Vendor</a></p>
+</section>
+<section class="deep-section" id="deep-deltek">
+<h2>Deltek</h2>
+<p class="program-subtitle">Deltek Solutions Partner Program (plus CPA Partner Program, Technology Integration Program, and Advocate/referral program)</p>
+<div class="field"><span class="field-label">Website</span><p><a href="https://www.deltek.com/en/partners" target="_blank" rel="noopener">https://www.deltek.com/en/partners</a></p></div>
+<div class="field"><span class="field-label">Partner types</span><p>SI / Implementation (Solutions Partners), ISV / Development (Technology Integration Partners), Referral</p></div>
+<div class="field"><span class="field-label">Tiers</span><ul><li>Not publicly segmented into a named tier ladder in materials found; distinct sub-programs (Solutions Partner, CPA Partner, Technology Integration, Advocate) function as parallel tracks rather than a single ladder</li></ul></div>
+
+<div class="field"><span class="field-label">Revenue share range</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Deal registration</span><p>Yes</p></div>
+<div class="field"><span class="field-label">MDF available</span><p>No &mdash; No public evidence of a formal MDF program found in this research pass</p></div>
+<div class="field"><span class="field-label">Certification cost</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Annual partner fee</span><p><span class="undisclosed" title="Not publicly disclosed">&mdash;</span></p></div>
+<div class="field"><span class="field-label">Ecosystem size</span><p>200+ partners/integrations; 30,000+ Deltek customers (per research summary)</p></div>
+<div class="field"><span class="field-label">Geographic reach</span><p>Global, with strength in project-based industries (government contracting, A/E/C, professional services)</p></div>
+<div class="field"><span class="field-label">Best-fit ICP</span><p>Vertical-specific — project-based businesses: government contractors, A/E/C firms, professional services</p></div>
+<div class="field"><span class="field-label">Recent program changes</span>
+<div class="changelog"><div class="changelog-entry"><div class="changelog-date">n.a.</div><div class="changelog-content"><div class="detail">Deltek&#x27;s official partner page does not name or describe distinct &#x27;Solutions Partner Program&#x27;, &#x27;CPA Partner Program&#x27;, or &#x27;Advocate&#x27; sub-programs — it presents a single unified &#x27;Deltek Partner Network&#x27; with Solutions Partners (implementation/consulting) and Technology Integration Partners (complementary tech). Confirmed directly by fetching the official page. &mdash; <a href="https://www.deltek.com/en/partners" target="_blank" rel="noopener">source</a></div></div></div></div>
+</div>
+<p class="dim editor-note"><em>Editor's note pending &mdash; Jason's take will appear here.</em></p>
+<p class="sources-footer">Sources: <a href="https://www.deltek.com/en/partners" target="_blank" rel="noopener">Deltek Partners overview</a>, <a href="https://www.deltek.com/en/partners" target="_blank" rel="noopener">Deltek Partner Network (official page, fetched directly)</a>, <a href="https://www.deltek.com/en/partners/marketplace/join" target="_blank" rel="noopener">Join the Deltek Marketplace</a></p>
+</section>
+</div>
+
+<!-- Tab: Insights -->
+<div class="tab-panel" id="tab-insights">
+<h2 class="section-title">Insights</h2>
+<div class="insights-list">
+<article class="insight">
+<h3>5 of 10 ERPs Don't Publicly Disclose Revenue Share</h3>
+<p>Half of the ten major ERP vendors researched keep their partner commission rates completely secret. SAP, Priority Software, Deltek, and Infor's current program structure publish no revenue-share percentage anywhere on their public partner pages, and Epicor's only available figures trace back to a 2016 trade-press quote rather than the vendor itself &mdash; see <a href="https://www.sap.com/partners/partner-program.html" target="_blank" rel="noopener">SAP's partner program page</a> and <a href="https://2wtech.com/understanding-the-epicor-certified-partner-program-levels/" target="_blank" rel="noopener">2WTech's Epicor tier analysis</a>. For prospective partners, this means real margin numbers typically only surface after signing an NDA or entering a sales conversation.</p>
+<p class="why-matters"><em>Why this matters for partnerships: opacity around revenue share makes it harder for prospective partners to compare programs upfront, favoring vendors willing to publish real numbers.</em></p>
+</article>
+
+<article class="insight">
+<h3>Acumatica Is the Only ERP Vendor That Charges Partners Literally Nothing to Join</h3>
+<p>Acumatica markets a deliberate "zero startup or annual fees" policy &mdash; no signup fee, no annual fee, no certification cost &mdash; explicitly contrasting itself with competitors charging $7,500&ndash;$14,000 per year, according to <a href="https://www.acumatica.com/blog/the-acumatica-ecosystem-a-place-where-partners-can-thrive/" target="_blank" rel="noopener">Acumatica's own partner blog</a>. Free training and badges (Sales Consultant, Pre-Sales Engineer, Business Consultant) reinforce a low-friction, volume-focused partner-recruitment strategy rather than a pay-to-play gate.</p>
+<p class="why-matters"><em>Why this matters for partnerships: a zero-fee model lowers the barrier for smaller implementers to become certified, but it also means Acumatica's ecosystem quality bar rests entirely on performance requirements, not upfront investment.</em></p>
+</article>
+
+<article class="insight">
+<h3>Odoo's Partner Count Depends Entirely on Who's Counting</h3>
+<p>Odoo's reported ecosystem size varies wildly by source and date: official event stats cite "10,000+" partners, the Odoo Unlocked newsletter tracker reported 11,291 as of September 2025, yet the vendor's own public directory shows only 3,980 listed and certified partners as of March 2026 &mdash; per <a href="https://odoounlocked.justdoers.com/p/odoo-unlocked-012-let-s-talk-about-numbers" target="_blank" rel="noopener">Odoo Unlocked #012</a> and the <a href="https://www.justdoers.com/odoo-partners-directory" target="_blank" rel="noopener">JustDoers Odoo Partners Directory</a>. That gap implies roughly two-thirds of "partners" are unlisted, uncertified accounts sitting in the entry-level Learning tier.</p>
+<p class="why-matters"><em>Why this matters for partnerships: headline partner-count claims can overstate the size of a vendor's active, certified channel by a wide margin &mdash; always check the directory, not just the press release.</em></p>
+</article>
+
+<article class="insight">
+<h3>SAP's Fees Are the Most Transparent on Record &mdash; Its Commissions Are the Most Opaque</h3>
+<p>SAP discloses its partner fees down to the euro &mdash; &euro;3,700/year for the Sell/Service track and &euro;2,000/year for Build-only &mdash; per the <a href="https://partneredge.sap.com/content/dam/public/dni/pe_program_guide_preview.pdf" target="_blank" rel="noopener">SAP PartnerEdge Program Guide</a>, and even publishes granular MDF co-funding percentages via <a href="https://news.sap.com/2025/01/sap-partneredge-cloud-driven-business-in-ai-era/" target="_blank" rel="noopener">SAP News</a>. Yet SAP discloses zero information about what commission a partner actually earns on a closed deal, leaving the single most important number for partner economics undisclosed.</p>
+<p class="why-matters"><em>Why this matters for partnerships: fee transparency is not the same as margin transparency &mdash; partners should ask directly about deal economics rather than assume detailed fee schedules imply comparable commission clarity.</em></p>
+</article>
+</div>
+</div>
+
+<!-- Tab: Changelog -->
+<div class="tab-panel" id="tab-changelog">
+<h2 class="section-title">Changelog</h2>
+<div class="changelog">
+<div class="changelog-entry">
+<div class="changelog-date">July 3, 2026</div>
+<div class="changelog-content">
+<div class="title">Initial launch</div>
+<div class="detail">ERP Partner Program Scorecard published with data across 10 vendor partner programs.</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+<p>PartnerAwesome &middot; ERP Partner Program Scorecard &middot; Data compiled from vendor partner program pages and independent channel research. Not affiliated with any vendor listed.</p>
+</footer>
+</div>
+<script>
+// Theme toggle
+(function(){
+  const btn = document.querySelector('[data-theme-toggle]');
+  const root = document.documentElement;
+  let theme = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+  root.setAttribute('data-theme', theme);
+  updateIcon();
+  btn.addEventListener('click', () => {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', theme);
+    updateIcon();
+  });
+  function updateIcon() {
+    btn.innerHTML = theme === 'dark'
+      ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+})();
+
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+</script>
+
+</div>
