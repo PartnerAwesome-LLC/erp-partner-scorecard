@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T08:28:00-04:00",
+  "generated_at": "2026-07-03T12:41:00-04:00",
   "vendors": [
     {
       "vendor_name": "NetSuite (Oracle)",
@@ -19,7 +19,7 @@
         "SDN: Select",
         "SDN: Premier (invite-only)"
       ],
-      "revenue_share_range": "30–50% margin on new license sales, 10–30% on renewal margin, ~15% on services/support",
+      "revenue_share_range": "30\u201350% margin on new license sales, 10\u201330% on renewal margin, ~15% on services/support",
       "deal_registration": {
         "offered": true,
         "protection_period": "Not specified; described as 'Real-Time Lead Registration'"
@@ -31,11 +31,11 @@
       "certification_cost": "SDN annual membership fee $3,000/year; SPP certification/testing included in program benefits",
       "annual_partner_fee": "SDN: $3,000/year; SPP: no separate stated fee but requires ~$100,000/year new license sales commitment",
       "ecosystem_size": "1,000+ active Solution Provider partners worldwide; 43,000+ NetSuite customers in 220 countries",
-      "geographic_reach": "Global — Americas, EMEA, JAPAC",
+      "geographic_reach": "Global \u2014 Americas, EMEA, JAPAC",
       "recent_program_changes": [
         {
           "date": "2025-10-07",
-          "change": "NetSuite Expands Partner Program to Accelerate AI Innovation — launched SuiteApp.AI Marketplace and new AI Elite/AI badges for SDN partners",
+          "change": "NetSuite Expands Partner Program to Accelerate AI Innovation \u2014 launched SuiteApp.AI Marketplace and new AI Elite/AI badges for SDN partners",
           "source_url": "https://www.oracle.com/sg/news/announcement/sw25-netsuite-expands-partner-program-accelerate-ai-innovation-2025-10-06/"
         }
       ],
@@ -88,7 +88,7 @@
         "Gold",
         "Platinum (invite-only)"
       ],
-      "program_structure_note": "SAP PartnerEdge is organized into 4 engagement tracks rather than a single tier ladder: Sell (resellers/VARs), Build (OEM/ISV/app developers), Service (consultants/SIs), and Run (MSP/outsourcing, invite-only). The current Sell-track page lists recommended entry prerequisites of 25 local employees, 3 SAP-certified cloud solution consultants, and a minimum of 4 deals annually or €300k annual contract value (or at least 2 GROW deals/year); new partners enter an 18-month evaluation period.",
+      "program_structure_note": "SAP PartnerEdge is organized into 4 engagement tracks rather than a single tier ladder: Sell (resellers/VARs), Build (OEM/ISV/app developers), Service (consultants/SIs), and Run (MSP/outsourcing, invite-only).",
       "revenue_share_range": "Not publicly disclosed",
       "deal_registration": {
         "offered": true,
@@ -96,21 +96,16 @@
       },
       "mdf_available": {
         "offered": true,
-        "notes": "SAP 'development funds' available to Sell/Run/Build tracks — up to 100% funding for sales enablement, 100% for customer stories, up to 100% for partner recruitment, 50% for training/certification/coaching"
+        "notes": "SAP 'development funds' available to Sell/Run/Build tracks \u2014 up to 100% funding for sales enablement, 100% for customer stories, up to 100% for partner recruitment, 50% for training/certification/coaching"
       },
       "certification_cost": "Not separately priced; SAP Learning Hub partner edition includes 4 exam attempts/year",
-      "annual_partner_fee": "Sell/Service track: €3,700/year; Build track only: €2,000/year (+€1,700 to add another track); Partner Grouping Agreement fees scale €4,200–€39,000 by entity count",
+      "annual_partner_fee": "Sell/Service track: \u20ac3,700/year; Build track only: \u20ac2,000/year (+\u20ac1,700 to add another track); Partner Grouping Agreement fees scale \u20ac4,200\u2013\u20ac39,000 by entity count",
       "ecosystem_size": "25,000+ partners worldwide (SAP News, Jan 2025); ~24,000 per Houlihan Lokey Oct 2024 report; 3,380+ verified listings in ERP Research directory",
-      "geographic_reach": "Global — particularly strong in EMEA",
+      "geographic_reach": "Global \u2014 particularly strong in EMEA",
       "recent_program_changes": [
         {
-          "date": "2026-07-23",
-          "change": "SAP PartnerEdge Sell page now lists concrete entry gates: recommended 25 local employees, 3 SAP-certified cloud solution consultants, a minimum of 4 deals annually or €300k annual contract value (or at least 2 GROW deals/year), and an 18-month evaluation period for new partners.",
-          "source_url": "https://www.sap.com/partners/partner-program/sell.html"
-        },
-        {
           "date": "2025-01-16",
-          "change": "SAP PartnerEdge Evolves for Cloud and AI Business — redesign toward 100% cloud focus with new AI adoption pillar",
+          "change": "SAP PartnerEdge Evolves for Cloud and AI Business \u2014 redesign toward 100% cloud focus with new AI adoption pillar",
           "source_url": "https://news.sap.com/2025/01/sap-partneredge-cloud-driven-business-in-ai-era/"
         },
         {
@@ -124,7 +119,7 @@
           "source_url": "https://news.sap.com/2026/01/updates-sap-integration-certification-program-partner-built-solutions/"
         }
       ],
-      "best_fit_icp": "Enterprise (S/4HANA) and SMB (Business One) — dual segment",
+      "best_fit_icp": "Enterprise (S/4HANA) and SMB (Business One) \u2014 dual segment",
       "partnerawesome_take": "",
       "sources": [
         {
@@ -154,10 +149,6 @@
         {
           "label": "ERP Research: SAP Partners directory",
           "url": "https://www.erpresearch.com/sap-partners"
-        },
-        {
-          "label": "SAP PartnerEdge Sell track requirements (official page, current July 2026)",
-          "url": "https://www.sap.com/partners/partner-program/sell.html"
         }
       ]
     },
@@ -188,8 +179,8 @@
         "offered": true,
         "notes": "No explicitly named 'MDF' fund on public pages, but 2026 CRN guide cites 'incremental investment in MDF'; core lead-sharing model distributes 100% of generated leads to partners"
       },
-      "certification_cost": "Free — no fees for training/badges (Sales Consultant, Pre-Sales Engineer, Business Consultant, etc.)",
-      "annual_partner_fee": "$0 — Acumatica explicitly markets 'zero startup or annual fees' versus competitors' $7,500–$14,000",
+      "certification_cost": "Free \u2014 no fees for training/badges (Sales Consultant, Pre-Sales Engineer, Business Consultant, etc.)",
+      "annual_partner_fee": "$0 \u2014 Acumatica explicitly markets 'zero startup or annual fees' versus competitors' $7,500\u2013$14,000",
       "ecosystem_size": "500+ total partners (Acumatica CEO 2025 year-in-review); ~350-450 VARs specifically per multiple sources; 10,000+ customers (EQT/Vista press release, May 2025)",
       "geographic_reach": "Americas, Africa, Europe, Southeast Asia, Middle East",
       "recent_program_changes": [
@@ -200,7 +191,7 @@
         },
         {
           "date": "2025-05-29",
-          "change": "EQT sold Acumatica to Vista Equity Partners following a 'transformational growth journey' — ownership change likely to affect future partner investment",
+          "change": "EQT sold Acumatica to Vista Equity Partners following a 'transformational growth journey' \u2014 ownership change likely to affect future partner investment",
           "source_url": "https://eqtgroup.com/en/news/eqt-to-sell-acumatica-to-vista-equity-partners-following-transformational-growth-journey-2025-05-29"
         }
       ],
@@ -228,7 +219,7 @@
           "url": "https://www.acumatica.com/media/2020/08/Acumatica-Partner-Referral-Program-Datasheet-08.25.2020.pdf"
         },
         {
-          "label": "Acumatica blog: The Acumatica Ecosystem — zero fees",
+          "label": "Acumatica blog: The Acumatica Ecosystem \u2014 zero fees",
           "url": "https://www.acumatica.com/blog/the-acumatica-ecosystem-a-place-where-partners-can-thrive/"
         },
         {
@@ -274,10 +265,10 @@
         "offered": true,
         "notes": "Marketing Development Funds (MDF) explicitly named in Sage's French Partner Program brochure; details on earning criteria not public in English-language materials"
       },
-      "certification_cost": "Development Partner Program (ISV) fees: Silver $350 signup / $250 renewal; Gold $800/$700 (Category 1) or $2,000–$3,000/$1,000–$2,000 (Category 2, higher for ERP product lines)",
+      "certification_cost": "Development Partner Program (ISV) fees: Silver $350 signup / $250 renewal; Gold $800/$700 (Category 1) or $2,000\u2013$3,000/$1,000\u2013$2,000 (Category 2, higher for ERP product lines)",
       "annual_partner_fee": "Sage Intacct: 'single fee' model, amount not publicly disclosed; ISV Development Partner fees as listed above",
       "ecosystem_size": "1,215+ verified partners per ERP Research directory; Sage markets 'thousands of partners' globally; historical figure of 3+ million Sage customers worldwide",
-      "geographic_reach": "Global — strong presence in UK/EMEA, North America, Africa",
+      "geographic_reach": "Global \u2014 strong presence in UK/EMEA, North America, Africa",
       "recent_program_changes": [
         {
           "date": "n.a.",
@@ -328,7 +319,7 @@
     },
     {
       "vendor_name": "Microsoft Dynamics 365 (Business Central + Finance & Operations)",
-      "program_name": "Microsoft AI Cloud Partner Program (MAICPP) — Cloud Solution Provider (CSP) model + Solutions Partner for Business Applications designation",
+      "program_name": "Microsoft AI Cloud Partner Program (MAICPP) \u2014 Cloud Solution Provider (CSP) model + Solutions Partner for Business Applications designation",
       "website": "https://partner.microsoft.com/partnership/solutions-partner-program",
       "partner_types": [
         "Reseller / VAR",
@@ -339,39 +330,23 @@
       "tiers": [
         "Cloud Solution Provider (CSP): Indirect Reseller (no revenue minimum) / Direct Bill (requires $1M trailing-12-month revenue in FY26)",
         "Solutions Partner designations across 6 solution areas (incl. Business Applications for Dynamics 365/Power Platform), each requiring a Partner Capability Score of 70/100",
-        "System Integrator (SI) and Managed Service Provider (MSP) tracks with their own incentive programs",
-        "FY27 additions: Agentic Partner Capability Score; Frontier partner specialization; frontier transformation engineer badge"
+        "System Integrator (SI) and Managed Service Provider (MSP) tracks with their own incentive programs"
       ],
       "program_structure_note": "Microsoft retired the old Gold/Silver competency model in October 2022 in favor of solution-area 'Solutions Partner' designations (e.g., Solutions Partner for Business Applications) earned via performance, skilling, and customer success points rather than a linear tier ladder.",
-      "revenue_share_range": "FY27 (Jul 1, 2026–Jun 30, 2027): Dynamics 365 incentives shift from flat run-rate rebates to premium-SKU Strategic Product Accelerators plus a year-on-year Growth Accelerator; Sherweb analysis states up to 19.5% earning opportunity, while Microsoft does not publish a Dynamics-specific rate table. MSPs can earn 15% Partner Earned Credit on managed Azure consumption.",
+      "revenue_share_range": "Not publicly disclosed as a single flat percentage; MSPs can earn Partner Earned Credit (PEC) of 15% of managed Azure consumption; CSP margins vary by license type; Dynamics-specific commission structure not separately published",
       "deal_registration": {
         "offered": true,
-        "protection_period": "Managed via Microsoft co-sell and referral programs; in FY27 Azure IP co-sell is Marketplace-first and PRACR is no longer the broad co-sell mechanism; specific protection period not publicly disclosed"
+        "protection_period": "Managed via Microsoft co-sell and referral programs; specific protection period not publicly disclosed"
       },
       "mdf_available": {
         "offered": true,
         "notes": "MDF available through the Partner Incentives program, tied to designation level and co-sell performance"
       },
-      "certification_cost": "Individual Microsoft Certified: Dynamics 365 exams typically ~$165 USD each; FY27 Business Applications skilling updates replace MB-280 with AB-210, Dynamics 365 Finance & Operations/Supply Chain solution-architect skilling with AB-100, PL-200 with AB-410, and MB-240 with AB-250 for affected designations/specializations.",
-      "annual_partner_fee": "Not a flat fee — gated by revenue thresholds; Direct Bill CSP requires $1M+ trailing-12-month cloud revenue in FY26 (raised from a prior ~$300K/year bar), per Novistra Capital ecosystem report",
+      "certification_cost": "Individual Microsoft Certified: Dynamics 365 exams typically ~$165 USD each; partner-level designation requires accumulated certifications rather than a flat program fee",
+      "annual_partner_fee": "Not a flat fee \u2014 gated by revenue thresholds; Direct Bill CSP requires $1M+ trailing-12-month cloud revenue in FY26 (raised from a prior ~$300K/year bar), per Novistra Capital ecosystem report",
       "ecosystem_size": "500,000+ partners across the overall Microsoft Cloud Partner Program ecosystem (not Dynamics-specific); more than 1,500 partner businesses hold Microsoft's diverse/minority-owned certification (per CRN)",
       "geographic_reach": "Global",
       "recent_program_changes": [
-        {
-          "date": "2026-07-23",
-          "change": "Third-party Sherweb analysis of FY27 CSP incentives says Dynamics 365 moves to premium-product Strategic Product Accelerators plus a year-on-year Growth Accelerator, with earning opportunity up to 19.5%; flat run-rate rebates are retired and exact SKU rates remain unpublished.",
-          "source_url": "https://www.sherweb.com/blog/partner/csp-programs-incentives/microsoft-fy27-csp-incentives/"
-        },
-        {
-          "date": "2026-07-27",
-          "change": "CRN interview with Microsoft's Chief Partner Officer details FY27 additions: Agentic Partner Capability Score accelerates eligibility for incentives and badges; Frontier partner specialization and the frontier transformation engineer badge are positioned as top-tier AI credentials. No new percentage payout is disclosed.",
-          "source_url": "https://www.crn.com/news/ai/2026/microsoft-s-nicole-dezen-unveils-fy27-partner-strategy-built-around-ai-transformation"
-        },
-        {
-          "date": "2026-07-30",
-          "change": "Microsoft Partner Center updated FY27 specialization skilling: Dynamics 365 Customer Experience Analyst (MB-280) retires for Sales AI Consultant (AB-210); Power Platform Functional Consultant (PL-200) retires for Intelligent Applications Builder (AB-410); Field Service (MB-240) retires with Contact Center AI Engineer (AB-250) added; Business Applications advanced skilling adds Agentic AI Business Solutions Architect (AB-100).",
-          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july"
-        },
         {
           "date": "2025-03-24",
           "change": "Microsoft at 50 blog detailed current partner ecosystem structure: ISV Success pathway for software companies, Solutions Partner designations and specializations tied to go-to-market resources and incentives",
@@ -384,7 +359,7 @@
         },
         {
           "date": "2026 (FY26)",
-          "change": "Microsoft AI Cloud Partner Program added high-value specializations (Copilot, Sovereign Cloud) and boosted co-sell incentives — 50% more Copilot funding and 70% more Azure Accelerate investment for FY26",
+          "change": "Microsoft AI Cloud Partner Program added high-value specializations (Copilot, Sovereign Cloud) and boosted co-sell incentives \u2014 50% more Copilot funding and 70% more Azure Accelerate investment for FY26",
           "source_url": "https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf"
         },
         {
@@ -409,7 +384,7 @@
           "url": "https://www.aicloudpartners.com/guides/microsoft-partner-program-guide.html"
         },
         {
-          "label": "Microsoft Official Blog: Microsoft at 50 — partner ecosystem",
+          "label": "Microsoft Official Blog: Microsoft at 50 \u2014 partner ecosystem",
           "url": "https://blogs.microsoft.com/blog/2025/03/24/microsoft-at-50-the-journey-and-future-of-the-partner-ecosystem/"
         },
         {
@@ -417,24 +392,12 @@
           "url": "https://novistra.com/wp-content/uploads/2026/01/DX_Microsoft-Ecosystem_Report_Dec-2025_FINAL.pdf"
         },
         {
-          "label": "CRN: Microsoft State of the Partner Ecosystem — 5 Things to Know",
+          "label": "CRN: Microsoft State of the Partner Ecosystem \u2014 5 Things to Know",
           "url": "https://www.crn.com/news/cloud/microsoft-state-of-the-partner-ecosystem-5-things-to-know"
         },
         {
           "label": "Microsoft Tech Community: New growth engine for partners (Apr 2026)",
           "url": "https://techcommunity.microsoft.com/blog/partnernews/ep-38--the-new-growth-engine-for-microsoft-partners-business-central-ai-and-p2p-/4504512"
-        },
-        {
-          "label": "Microsoft Partner Center July 2026 announcements (FY27 incentives, skilling, co-sell)",
-          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-july"
-        },
-        {
-          "label": "CRN: Microsoft FY27 partner strategy and Agentic Partner Capability Score",
-          "url": "https://www.crn.com/news/ai/2026/microsoft-s-nicole-dezen-unveils-fy27-partner-strategy-built-around-ai-transformation"
-        },
-        {
-          "label": "Sherweb: Microsoft FY27 CSP incentives analysis",
-          "url": "https://www.sherweb.com/blog/partner/csp-programs-incentives/microsoft-fy27-csp-incentives/"
         }
       ]
     },
@@ -463,7 +426,7 @@
       "certification_cost": "Included in Learning ($990/year) or Official ($3,950/year) partnership fee",
       "annual_partner_fee": "Learning tier: $990/year; Official tier: $3,950/year",
       "ecosystem_size": "Reported figures vary significantly by source and date: ~9,500 partners (Apr 2025, Odoo Partnerships & Alliances via LinkedIn); 11,291 partners (Sep 2025, Odoo Unlocked #012); 10,000+ partners cited at OXP 2025 event; 3,980 publicly listed/certified partners across 226 countries as of Mar 2026 (JustDoers directory), which is described as roughly one-third of the full network since thousands remain in the unlisted 'Learning' tier.",
-      "geographic_reach": "Global — strong presence in Europe (Belgium HQ), growing in North America and Asia",
+      "geographic_reach": "Global \u2014 strong presence in Europe (Belgium HQ), growing in North America and Asia",
       "recent_program_changes": [
         {
           "date": "2025-09-29",
@@ -509,7 +472,7 @@
           "url": "https://www.justdoers.com/odoo-partners-directory"
         },
         {
-          "label": "LinkedIn: Sarah Wagon — 9,500 Odoo partners worldwide (Apr 2025)",
+          "label": "LinkedIn: Sarah Wagon \u2014 9,500 Odoo partners worldwide (Apr 2025)",
           "url": "https://www.linkedin.com/posts/swagon_there-are-9500-odoo-partners-worldwide-as-activity-7325494865893498882-r6fE"
         },
         {
@@ -532,7 +495,7 @@
         "Silver",
         "Gold"
       ],
-      "revenue_share_range": "Gold tier: 40% commission on first-year cloud contract value, 25% every year thereafter as long as customer remains on board (per Diginomica 2016 reporting on Infor Partner Network economics — structure referenced as still broadly representative but should be reconfirmed against current IPN fact sheet)",
+      "revenue_share_range": "Gold tier: 40% commission on first-year cloud contract value, 25% every year thereafter as long as customer remains on board (per Diginomica 2016 reporting on Infor Partner Network economics \u2014 structure referenced as still broadly representative but should be reconfirmed against current IPN fact sheet)",
       "deal_registration": {
         "offered": true,
         "protection_period": "Not publicly specified"
@@ -552,7 +515,7 @@
           "source_url": "https://webassets.infor.com/images/ipn-fact-sheet.pdf?v=1536324998"
         }
       ],
-      "best_fit_icp": "Vertical-specific — manufacturing, distribution, healthcare, fashion (Infor CloudSuite industry focus)",
+      "best_fit_icp": "Vertical-specific \u2014 manufacturing, distribution, healthcare, fashion (Infor CloudSuite industry focus)",
       "partnerawesome_take": "",
       "sources": [
         {
@@ -568,7 +531,7 @@
           "url": "https://www.crn.com/news/channel-programs/230500015/infor-develops-new-program-standard-contracts-for-its-channel-partners"
         },
         {
-          "label": "Diginomica: Briefing review — can Infor's partner strategy keep pace? (Gold commission detail)",
+          "label": "Diginomica: Briefing review \u2014 can Infor's partner strategy keep pace? (Gold commission detail)",
           "url": "https://diginomica.com/briefing-review-can-infors-partner-strategy-keep-pace-with-its-digital-pursuits"
         },
         {
@@ -593,7 +556,7 @@
         "Gold",
         "Platinum"
       ],
-      "revenue_share_range": "Not publicly disclosed as a current fixed percentage. Historical reporting (2016, ChannelLife NZ) cited margins from ~15-20% for referral-style partners up to ~45% for top-performing partners running full sales/marketing operations. Certified tier thresholds (2WTech, 2023): Platinum requires >$2.09M in annual Epicor revenue + 14 dedicated sales/marketing staff; Gold requires >$1.045M + 9 staff; Silver requires $605K–$1.045M + 1 staff.",
+      "revenue_share_range": "Not publicly disclosed as a current fixed percentage. Historical reporting (2016, ChannelLife NZ) cited margins from ~15-20% for referral-style partners up to ~45% for top-performing partners running full sales/marketing operations. Certified tier thresholds (2WTech, 2023): Platinum requires >$2.09M in annual Epicor revenue + 14 dedicated sales/marketing staff; Gold requires >$1.045M + 9 staff; Silver requires $605K\u2013$1.045M + 1 staff.",
       "deal_registration": {
         "offered": true,
         "protection_period": "Not publicly specified"
@@ -609,7 +572,7 @@
       "recent_program_changes": [
         {
           "date": "n.a.",
-          "change": "Epicor's official partner page (fetched directly) organizes partners into four relationship types — Sell (Reseller), Service, Refer, and Develop (ISV) — with no dated 2025-2026 restructuring announcement found",
+          "change": "Epicor's official partner page (fetched directly) organizes partners into four relationship types \u2014 Sell (Reseller), Service, Refer, and Develop (ISV) \u2014 with no dated 2025-2026 restructuring announcement found",
           "source_url": "https://www.epicor.com/en-us/partners/"
         },
         {
@@ -618,7 +581,7 @@
           "source_url": "https://www.linkedin.com/posts/epicor_join-our-channel-partner-community-activity-7442646049783029760-ddts"
         }
       ],
-      "best_fit_icp": "Vertical-specific — manufacturing (Kinetic) and wholesale distribution (Prophet 21), SMB to Mid-market",
+      "best_fit_icp": "Vertical-specific \u2014 manufacturing (Kinetic) and wholesale distribution (Prophet 21), SMB to Mid-market",
       "partnerawesome_take": "",
       "sources": [
         {
@@ -650,7 +613,7 @@
           "url": "https://www.tahawultech.com/features/fresh-take/"
         },
         {
-          "label": "LinkedIn: Epicor — Join Our Channel Partner Community",
+          "label": "LinkedIn: Epicor \u2014 Join Our Channel Partner Community",
           "url": "https://www.linkedin.com/posts/epicor_join-our-channel-partner-community-activity-7442646049783029760-ddts"
         }
       ]
@@ -679,11 +642,11 @@
       "certification_cost": "Not publicly disclosed",
       "annual_partner_fee": "Not publicly disclosed",
       "ecosystem_size": "100+ partners across 70 countries (per research summary)",
-      "geographic_reach": "Global — notable presence in Israel (HQ), North America, Europe",
+      "geographic_reach": "Global \u2014 notable presence in Israel (HQ), North America, Europe",
       "recent_program_changes": [
         {
           "date": "2025-04-23",
-          "change": "Official 'Become a Partner' page (last updated per page metadata) emphasizes global growth journey positioning, incentives for new territories/verticals, and 100% services fee retention for VAR partners — no tier structure or specific rates disclosed publicly",
+          "change": "Official 'Become a Partner' page (last updated per page metadata) emphasizes global growth journey positioning, incentives for new territories/verticals, and 100% services fee retention for VAR partners \u2014 no tier structure or specific rates disclosed publicly",
           "source_url": "https://www.priority-software.com/become-a-partner/"
         }
       ],
@@ -732,11 +695,11 @@
       "recent_program_changes": [
         {
           "date": "n.a.",
-          "change": "Deltek's official partner page does not name or describe distinct 'Solutions Partner Program', 'CPA Partner Program', or 'Advocate' sub-programs — it presents a single unified 'Deltek Partner Network' with Solutions Partners (implementation/consulting) and Technology Integration Partners (complementary tech). Confirmed directly by fetching the official page.",
+          "change": "Deltek's official partner page does not name or describe distinct 'Solutions Partner Program', 'CPA Partner Program', or 'Advocate' sub-programs \u2014 it presents a single unified 'Deltek Partner Network' with Solutions Partners (implementation/consulting) and Technology Integration Partners (complementary tech). Confirmed directly by fetching the official page.",
           "source_url": "https://www.deltek.com/en/partners"
         }
       ],
-      "best_fit_icp": "Vertical-specific — project-based businesses: government contractors, A/E/C firms, professional services",
+      "best_fit_icp": "Vertical-specific \u2014 project-based businesses: government contractors, A/E/C firms, professional services",
       "partnerawesome_take": "",
       "sources": [
         {
