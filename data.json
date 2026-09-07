@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T08:28:00-04:00",
+  "generated_at": "2026-09-07T08:35:00-04:00",
   "vendors": [
     {
       "vendor_name": "NetSuite (Oracle)",
@@ -339,11 +339,11 @@
       "tiers": [
         "Cloud Solution Provider (CSP): Indirect Reseller (no revenue minimum) / Direct Bill (requires $1M trailing-12-month revenue in FY26)",
         "Solutions Partner designations across 6 solution areas (incl. Business Applications for Dynamics 365/Power Platform), each requiring a Partner Capability Score of 70/100",
-        "System Integrator (SI) and Managed Service Provider (MSP) tracks with their own incentive programs",
-        "FY27 additions: Agentic Partner Capability Score; Frontier partner specialization; frontier transformation engineer badge"
+        "FY27 customer-facing commercial solution areas renamed AI Business Solutions, Cloud & AI Platforms, and Security; System Integrator (SI) and Managed Service Provider (MSP) tracks continue with their own incentive programs",
+        "FY27 additions: Agentic Partner Capability Score; Frontier partner specialization; Frontier Transformation Engineer badge"
       ],
       "program_structure_note": "Microsoft retired the old Gold/Silver competency model in October 2022 in favor of solution-area 'Solutions Partner' designations (e.g., Solutions Partner for Business Applications) earned via performance, skilling, and customer success points rather than a linear tier ladder.",
-      "revenue_share_range": "FY27 (Jul 1, 2026–Jun 30, 2027): Dynamics 365 incentives shift from flat run-rate rebates to premium-SKU Strategic Product Accelerators plus a year-on-year Growth Accelerator; Sherweb analysis states up to 19.5% earning opportunity, while Microsoft does not publish a Dynamics-specific rate table. MSPs can earn 15% Partner Earned Credit on managed Azure consumption.",
+      "revenue_share_range": "FY27 (Jul 1, 2026–Jun 30, 2027): Dynamics 365 incentives shift from flat run-rate rebates to premium-SKU Strategic Product Accelerators plus a year-on-year Growth Accelerator; Sherweb analysis states up to 19.5% earning opportunity, while Microsoft does not publish a Dynamics-specific rate table. New FY27 Frontier Accelerate incentives cover Copilot, Business Processes, and AI-Ready Productivity portfolios and require a 33% portfolio performance rate, measured at quarterly milestones over the 12 months after each engagement. MSPs can earn 15% Partner Earned Credit on managed Azure consumption.",
       "deal_registration": {
         "offered": true,
         "protection_period": "Managed via Microsoft co-sell and referral programs; in FY27 Azure IP co-sell is Marketplace-first and PRACR is no longer the broad co-sell mechanism; specific protection period not publicly disclosed"
@@ -352,11 +352,31 @@
         "offered": true,
         "notes": "MDF available through the Partner Incentives program, tied to designation level and co-sell performance"
       },
-      "certification_cost": "Individual Microsoft Certified: Dynamics 365 exams typically ~$165 USD each; FY27 Business Applications skilling updates replace MB-280 with AB-210, Dynamics 365 Finance & Operations/Supply Chain solution-architect skilling with AB-100, PL-200 with AB-410, and MB-240 with AB-250 for affected designations/specializations.",
+      "certification_cost": "Individual Microsoft Certified: Dynamics 365 exams typically ~$165 USD each; FY27 Business Applications skilling updates replace MB-280 with AB-210, Dynamics 365 Finance & Operations/Supply Chain solution-architect skilling with AB-100, PL-200 with AB-410, and MB-240 with AB-250 for affected designations/specializations. On August 31, AZ-500 retired for SC-500 and PL-200 retired for AB-410; completed retiring certifications remain valid for one year.",
       "annual_partner_fee": "Not a flat fee — gated by revenue thresholds; Direct Bill CSP requires $1M+ trailing-12-month cloud revenue in FY26 (raised from a prior ~$300K/year bar), per Novistra Capital ecosystem report",
       "ecosystem_size": "500,000+ partners across the overall Microsoft Cloud Partner Program ecosystem (not Dynamics-specific); more than 1,500 partner businesses hold Microsoft's diverse/minority-owned certification (per CRN)",
       "geographic_reach": "Global",
       "recent_program_changes": [
+        {
+          "date": "2026-08-31",
+          "change": "Microsoft retired AZ-500 and PL-200 certifications for affected partner designations and specializations, replacing them with AI-focused SC-500 and AB-410; certifications completed before retirement remain valid for one year.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august"
+        },
+        {
+          "date": "2026-08-27",
+          "change": "Microsoft introduced the Eligibility Dashboard for CSP direct-bill partners. MAICPP enrollment and the security requirement are validated at the tenant level, while the $1M TTM revenue requirement, active support plan, and Solutions Partner designation remain PGA-level requirements.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august"
+        },
+        {
+          "date": "2026-08-19",
+          "change": "Sherweb's August Dynamics update reports new FY27 Frontier Accelerate incentives for AI Business Solutions across Copilot, Business Processes, and AI-Ready Productivity; partners must maintain a 33% portfolio performance rate measured at quarterly milestones over the 12 months after each engagement.",
+          "source_url": "https://www.sherweb.com/blog/microsoft-ecosystem/dynamics-365/dynamics-updates-august-2026/"
+        },
+        {
+          "date": "2026-08-05",
+          "change": "Microsoft updated customer-facing Solutions Partner badge names to align with three commercial solution areas: AI Business Solutions, Cloud & AI Platforms, and Security; eligibility for benefits and incentives remains tied to the enrolled solution path.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august"
+        },
         {
           "date": "2026-07-23",
           "change": "Third-party Sherweb analysis of FY27 CSP incentives says Dynamics 365 moves to premium-product Strategic Product Accelerators plus a year-on-year Growth Accelerator, with earning opportunity up to 19.5%; flat run-rate rebates are retired and exact SKU rates remain unpublished.",
@@ -435,6 +455,14 @@
         {
           "label": "Sherweb: Microsoft FY27 CSP incentives analysis",
           "url": "https://www.sherweb.com/blog/partner/csp-programs-incentives/microsoft-fy27-csp-incentives/"
+        },
+        {
+          "label": "Microsoft Partner Center August 2026 announcements",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-august"
+        },
+        {
+          "label": "Sherweb: Dynamics 365 and Power Platform updates — August 2026",
+          "url": "https://www.sherweb.com/blog/microsoft-ecosystem/dynamics-365/dynamics-updates-august-2026/"
         }
       ]
     },
