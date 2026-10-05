@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T08:35:00-04:00",
+  "generated_at": "2026-10-05T08:22:00-04:00",
   "vendors": [
     {
       "vendor_name": "NetSuite (Oracle)",
@@ -96,13 +96,18 @@
       },
       "mdf_available": {
         "offered": true,
-        "notes": "SAP 'development funds' available to Sell/Run/Build tracks — up to 100% funding for sales enablement, 100% for customer stories, up to 100% for partner recruitment, 50% for training/certification/coaching"
+        "notes": "SAP PartnerEdge Sell partners may earn MDF and business-development funds. CRN's 2026 Partner Program Guide reports that SAP consolidated MDF and BDF into a single proposal-driven development fund; it does not state amounts or eligibility. SAP's current Sell page says MDF validity is up to 21 months."
       },
       "certification_cost": "Not separately priced; SAP Learning Hub partner edition includes 4 exam attempts/year",
       "annual_partner_fee": "Sell/Service track: €3,700/year; Build track only: €2,000/year (+€1,700 to add another track); Partner Grouping Agreement fees scale €4,200–€39,000 by entity count",
       "ecosystem_size": "25,000+ partners worldwide (SAP News, Jan 2025); ~24,000 per Houlihan Lokey Oct 2024 report; 3,380+ verified listings in ERP Research directory",
       "geographic_reach": "Global — particularly strong in EMEA",
       "recent_program_changes": [
+        {
+          "date": "2026-02-26",
+          "change": "CRN's 2026 Partner Program Guide reports SAP consolidated MDF and business-development funds into a single proposal-driven development fund and introduced cloud-KPI/customer-success-linked leveling and consequence management; amounts, detailed criteria, and specific level names are not stated.",
+          "source_url": "https://www.crn.com/news/channel-news/2026/5-star-software-vendor-programs"
+        },
         {
           "date": "2026-07-23",
           "change": "SAP PartnerEdge Sell page now lists concrete entry gates: recommended 25 local employees, 3 SAP-certified cloud solution consultants, a minimum of 4 deals annually or €300k annual contract value (or at least 2 GROW deals/year), and an 18-month evaluation period for new partners.",
@@ -158,6 +163,10 @@
         {
           "label": "SAP PartnerEdge Sell track requirements (official page, current July 2026)",
           "url": "https://www.sap.com/partners/partner-program/sell.html"
+        },
+        {
+          "label": "CRN: 2026 Partner Program Guide — 5-Star Software Vendor Programs",
+          "url": "https://www.crn.com/news/channel-news/2026/5-star-software-vendor-programs"
         }
       ]
     },
@@ -340,23 +349,43 @@
         "Cloud Solution Provider (CSP): Indirect Reseller (no revenue minimum) / Direct Bill (requires $1M trailing-12-month revenue in FY26)",
         "Solutions Partner designations across 6 solution areas (incl. Business Applications for Dynamics 365/Power Platform), each requiring a Partner Capability Score of 70/100",
         "FY27 customer-facing commercial solution areas renamed AI Business Solutions, Cloud & AI Platforms, and Security; System Integrator (SI) and Managed Service Provider (MSP) tracks continue with their own incentive programs",
-        "FY27 additions: Agentic Partner Capability Score; Frontier partner specialization; Frontier Transformation Engineer badge"
+        "FY27 additions: Agentic Partner Capability Score; Frontier Transformation Engineer badge; Frontier Partner specialization became live September 30, 2026"
       ],
       "program_structure_note": "Microsoft retired the old Gold/Silver competency model in October 2022 in favor of solution-area 'Solutions Partner' designations (e.g., Solutions Partner for Business Applications) earned via performance, skilling, and customer success points rather than a linear tier ladder.",
-      "revenue_share_range": "FY27 (Jul 1, 2026–Jun 30, 2027): Dynamics 365 incentives shift from flat run-rate rebates to premium-SKU Strategic Product Accelerators plus a year-on-year Growth Accelerator; Sherweb analysis states up to 19.5% earning opportunity, while Microsoft does not publish a Dynamics-specific rate table. New FY27 Frontier Accelerate incentives cover Copilot, Business Processes, and AI-Ready Productivity portfolios and require a 33% portfolio performance rate, measured at quarterly milestones over the 12 months after each engagement. MSPs can earn 15% Partner Earned Credit on managed Azure consumption.",
+      "revenue_share_range": "FY27 (Jul 1, 2026–Jun 30, 2027): Dynamics 365 incentives shift from flat run-rate rebates to premium-SKU Strategic Product Accelerators plus a year-on-year Growth Accelerator; Sherweb analysis states up to 19.5% earning opportunity, while Microsoft does not publish a Dynamics-specific rate table. New FY27 Frontier Accelerate incentives cover Copilot, Business Processes, and AI-Ready Productivity portfolios and require a 33% portfolio performance rate, measured at quarterly milestones over the 12 months after each engagement. MSPs can earn 15% Partner Earned Credit on managed Azure consumption. Microsoft also announced a CSP Copilot Cowork activation incentive in September and CSP license-based growth margins went live October 1, 2026; Microsoft announcement pages do not state their payout rates or full eligibility terms.",
       "deal_registration": {
         "offered": true,
         "protection_period": "Managed via Microsoft co-sell and referral programs; in FY27 Azure IP co-sell is Marketplace-first and PRACR is no longer the broad co-sell mechanism; specific protection period not publicly disclosed"
       },
       "mdf_available": {
         "offered": true,
-        "notes": "MDF available through the Partner Incentives program, tied to designation level and co-sell performance"
+        "notes": "MDF available through the Partner Incentives program, tied to designation level and co-sell performance; separately, eligible partners can receive up to $30,000 in Azure sponsorships through Frontier Accelerate for Marketplace Premium (not described as MDF)"
       },
       "certification_cost": "Individual Microsoft Certified: Dynamics 365 exams typically ~$165 USD each; FY27 Business Applications skilling updates replace MB-280 with AB-210, Dynamics 365 Finance & Operations/Supply Chain solution-architect skilling with AB-100, PL-200 with AB-410, and MB-240 with AB-250 for affected designations/specializations. On August 31, AZ-500 retired for SC-500 and PL-200 retired for AB-410; completed retiring certifications remain valid for one year.",
       "annual_partner_fee": "Not a flat fee — gated by revenue thresholds; Direct Bill CSP requires $1M+ trailing-12-month cloud revenue in FY26 (raised from a prior ~$300K/year bar), per Novistra Capital ecosystem report",
       "ecosystem_size": "500,000+ partners across the overall Microsoft Cloud Partner Program ecosystem (not Dynamics-specific); more than 1,500 partner businesses hold Microsoft's diverse/minority-owned certification (per CRN)",
       "geographic_reach": "Global",
       "recent_program_changes": [
+        {
+          "date": "2026-09-10",
+          "change": "Microsoft announced a CSP Copilot Cowork adoption incentive for indirect resellers and direct-bill partners; the official update does not disclose bonus amounts or qualification thresholds.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-september"
+        },
+        {
+          "date": "2026-09-28",
+          "change": "Frontier Accelerate for Marketplace became available to eligible partners; its Premium track includes up to $30,000 in Azure sponsorships, plus marketing and engagement-manager benefits.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-september"
+        },
+        {
+          "date": "2026-09-30",
+          "change": "The Frontier Partner specialization became available to eligible partners, validating capabilities to design, build, deploy, govern, and secure AI agents; benefits include a customer-facing badge and eligibility for Frontier-aligned co-sell opportunities.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-september"
+        },
+        {
+          "date": "2026-10-01",
+          "change": "Microsoft's Partner Center announcements say CSP license-based growth margins went live October 1, following September eligibility validation via APIs; the announcement overview does not disclose rates or eligibility criteria.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/"
+        },
         {
           "date": "2026-08-31",
           "change": "Microsoft retired AZ-500 and PL-200 certifications for affected partner designations and specializations, replacing them with AI-focused SC-500 and AB-410; certifications completed before retirement remain valid for one year.",
@@ -463,6 +492,14 @@
         {
           "label": "Sherweb: Dynamics 365 and Power Platform updates — August 2026",
           "url": "https://www.sherweb.com/blog/microsoft-ecosystem/dynamics-365/dynamics-updates-august-2026/"
+        },
+        {
+          "label": "Microsoft Partner Center September 2026 announcements",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-september"
+        },
+        {
+          "label": "Microsoft Partner Center announcements (includes October 1 growth-margin launch)",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/"
         }
       ]
     },
@@ -556,18 +593,16 @@
         "ISV / Development"
       ],
       "tiers": [
-        "Associate",
-        "Silver",
-        "Gold"
+        "No public named tier ladder in current IPN materials; official partner page organizes engagement under Innovate, Prospect, Influence and sell, and Deliver and run"
       ],
-      "revenue_share_range": "Gold tier: 40% commission on first-year cloud contract value, 25% every year thereafter as long as customer remains on board (per Diginomica 2016 reporting on Infor Partner Network economics — structure referenced as still broadly representative but should be reconfirmed against current IPN fact sheet)",
+      "revenue_share_range": "Current 2025+ IPN materials describe lifetime SaaS commissions, but no public rate or payment terms. The previously cited 40% first-year / 25% renewal Gold model comes from 2016 reporting and is not confirmed for the revamped program; treat it as historical, not a verified current rate.",
       "deal_registration": {
         "offered": true,
         "protection_period": "Not publicly specified"
       },
       "mdf_available": {
         "offered": true,
-        "notes": "Market Development Funding (MDF) program explicitly named as part of IPN's tiered support structure, intended to help partners invest back into their businesses (per original 2011 IPN launch coverage); current earning criteria not confirmed in this research pass"
+        "notes": "Infor reported increased investment in marketing development funds alongside partner enablement and co-selling support in May 2026 coverage; no amount, allocation rules, or eligibility criteria were stated."
       },
       "certification_cost": "Not publicly disclosed as a flat figure",
       "annual_partner_fee": "Not publicly disclosed",
@@ -575,9 +610,14 @@
       "geographic_reach": "Global, with strength in manufacturing and distribution verticals",
       "recent_program_changes": [
         {
-          "date": "n.a.",
-          "change": "No specific dated 2025-2026 IPN program announcement located in this research pass; program structure (Associate/Silver/Gold tiers) traces back to a 2011 relaunch and has not been reported as substantially restructured since",
-          "source_url": "https://webassets.infor.com/images/ipn-fact-sheet.pdf?v=1536324998"
+          "date": "2026-05-20",
+          "change": "Channel Dive reported Infor had shifted toward recurring revenue, co-selling, and customer outcomes; the revamped IPN includes lifetime SaaS commissions and increased MDF, but public coverage gives no rate, allocation rules, or eligibility criteria.",
+          "source_url": "https://www.channeldive.com/news/infor-erp-cloud-ai-partner-program-aws/820637/"
+        },
+        {
+          "date": "2025-01",
+          "change": "Infor launched a revamped Partner Network after a six-month pilot, aligning partner rewards with cloud ERP, AI, industry-specific services, and customer-lifecycle outcomes rather than only point-of-sale incentives.",
+          "source_url": "https://www.channeldive.com/news/infor-erp-cloud-ai-partner-program-aws/820637/"
         }
       ],
       "best_fit_icp": "Vertical-specific — manufacturing, distribution, healthcare, fashion (Infor CloudSuite industry focus)",
@@ -602,6 +642,10 @@
         {
           "label": "ChannelLife NZ: Commission, bonuses offered by Infor Partner Network",
           "url": "https://channellife.co.nz/story/commission-bonuses-offered-by-infor-partner-network"
+        },
+        {
+          "label": "Channel Dive: ERP vendor Infor goes all in on the channel (May 2026)",
+          "url": "https://www.channeldive.com/news/infor-erp-cloud-ai-partner-program-aws/820637/"
         }
       ]
     },
@@ -742,7 +786,7 @@
         "Referral"
       ],
       "tiers": [
-        "Not publicly segmented into a named tier ladder in materials found; distinct sub-programs (Solutions Partner, CPA Partner, Technology Integration, Advocate) function as parallel tracks rather than a single ladder"
+        "New 2026 tier structure: Platinum is the highest named tier; remaining tier names and qualification thresholds are not publicly stated in the evidence reviewed"
       ],
       "revenue_share_range": "Not publicly disclosed",
       "deal_registration": {
@@ -759,9 +803,14 @@
       "geographic_reach": "Global, with strength in project-based industries (government contracting, A/E/C, professional services)",
       "recent_program_changes": [
         {
+          "date": "2026-03-12",
+          "change": "Baker Tilly reported Deltek introduced a new Partner Network tiering structure and designated Baker Tilly a Platinum Partner, described as the highest tier; the article provides no other tier names or quantified requirements.",
+          "source_url": "https://www.bakertilly.com/news/baker-tilly-named-2025-deltek-services-partner-of-the-year"
+        },
+        {
           "date": "n.a.",
-          "change": "Deltek's official partner page does not name or describe distinct 'Solutions Partner Program', 'CPA Partner Program', or 'Advocate' sub-programs — it presents a single unified 'Deltek Partner Network' with Solutions Partners (implementation/consulting) and Technology Integration Partners (complementary tech). Confirmed directly by fetching the official page.",
-          "source_url": "https://www.deltek.com/en/partners"
+          "change": "Deltek's current partner enrollment page names Solutions Partners, CPA Partners, and Technology Integration Partners as distinct engagement programs; it does not publish formal tier criteria, commissions, fees, certification requirements, or MDF terms.",
+          "source_url": "https://www.deltek.com/partners/become-a-partner/"
         }
       ],
       "best_fit_icp": "Vertical-specific — project-based businesses: government contractors, A/E/C firms, professional services",
@@ -778,6 +827,14 @@
         {
           "label": "Join the Deltek Marketplace",
           "url": "https://www.deltek.com/en/partners/marketplace/join"
+        },
+        {
+          "label": "Baker Tilly: 2025 Deltek Services Partner of the Year and Platinum tier",
+          "url": "https://www.bakertilly.com/news/baker-tilly-named-2025-deltek-services-partner-of-the-year"
+        },
+        {
+          "label": "Deltek: Become a Partner (official program tracks)",
+          "url": "https://www.deltek.com/partners/become-a-partner/"
         }
       ]
     }
