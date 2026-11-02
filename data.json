@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T08:22:00-04:00",
+  "generated_at": "2026-11-02T07:05:00-05:00",
   "vendors": [
     {
       "vendor_name": "NetSuite (Oracle)",
@@ -37,6 +37,11 @@
           "date": "2025-10-07",
           "change": "NetSuite Expands Partner Program to Accelerate AI Innovation — launched SuiteApp.AI Marketplace and new AI Elite/AI badges for SDN partners",
           "source_url": "https://www.oracle.com/sg/news/announcement/sw25-netsuite-expands-partner-program-accelerate-ai-innovation-2025-10-06/"
+        },
+        {
+          "date": "2026-10-26",
+          "change": "CRN reports Oracle committed $1 billion over four years to expand Oracle PartnerNetwork benefits, incentives, and resources across product/service building, co-selling, delivery, and customer success. CRN separately notes NetSuite's 2026 enablement goals for NetSuite Next, NetSuite Integration Platform, AI Connector Service, and AI Studios; no NetSuite-specific allocation or payout is disclosed.",
+          "source_url": "https://www.crn.com/news/ai/2026/oracle-commits-1-billion-to-partner-ecosystem"
         }
       ],
       "best_fit_icp": "Mid-market to Enterprise",
@@ -69,6 +74,10 @@
         {
           "label": "houseblend.io: NetSuite partner types and tiers",
           "url": "https://www.houseblend.io/articles/netsuite-partner-types-and-tiers"
+        },
+        {
+          "label": "CRN: Oracle Commits $1 Billion To Partner Ecosystem (Oct 2026)",
+          "url": "https://www.crn.com/news/ai/2026/oracle-commits-1-billion-to-partner-ecosystem"
         }
       ]
     },
@@ -352,10 +361,10 @@
         "FY27 additions: Agentic Partner Capability Score; Frontier Transformation Engineer badge; Frontier Partner specialization became live September 30, 2026"
       ],
       "program_structure_note": "Microsoft retired the old Gold/Silver competency model in October 2022 in favor of solution-area 'Solutions Partner' designations (e.g., Solutions Partner for Business Applications) earned via performance, skilling, and customer success points rather than a linear tier ladder.",
-      "revenue_share_range": "FY27 (Jul 1, 2026–Jun 30, 2027): Dynamics 365 incentives shift from flat run-rate rebates to premium-SKU Strategic Product Accelerators plus a year-on-year Growth Accelerator; Sherweb analysis states up to 19.5% earning opportunity, while Microsoft does not publish a Dynamics-specific rate table. New FY27 Frontier Accelerate incentives cover Copilot, Business Processes, and AI-Ready Productivity portfolios and require a 33% portfolio performance rate, measured at quarterly milestones over the 12 months after each engagement. MSPs can earn 15% Partner Earned Credit on managed Azure consumption. Microsoft also announced a CSP Copilot Cowork activation incentive in September and CSP license-based growth margins went live October 1, 2026; Microsoft announcement pages do not state their payout rates or full eligibility terms.",
+      "revenue_share_range": "FY27 (Jul 1, 2026–Jun 30, 2027): Dynamics 365 incentives shift from flat run-rate rebates to premium-SKU Strategic Product Accelerators plus a year-on-year Growth Accelerator; Sherweb analysis states up to 19.5% earning opportunity, while Microsoft does not publish a Dynamics-specific rate table. New FY27 Frontier Accelerate incentives cover Copilot, Business Processes, and AI-Ready Productivity portfolios and require a 33% portfolio performance rate, measured at quarterly milestones over the 12 months after each engagement. MSPs can earn 15% Partner Earned Credit on managed Azure consumption. On October 1, Microsoft retargeted FY27 partner investments without increasing the total commitment: the refreshed Business Applications Pre-Sales Advisor incentive now also covers CSP customers, uses adjusted rate cards, and requires the Business Applications specialization; payout rates are not disclosed. Microsoft also announced a CSP Copilot Cowork activation incentive in September and CSP license-based growth margins went live October 1, 2026; Microsoft announcement pages do not state their payout rates or full eligibility terms. An October 29 announcement also lists 7.5% promotional pricing for eligible CSP direct-bill partners and distributors on Microsoft Defender Suite for Business Premium and Microsoft Purview Suite for Business Premium for eligible customers with fewer than 300 seats; this is customer-facing promotional pricing, not a published partner commission.",
       "deal_registration": {
         "offered": true,
-        "protection_period": "Managed via Microsoft co-sell and referral programs; in FY27 Azure IP co-sell is Marketplace-first and PRACR is no longer the broad co-sell mechanism; specific protection period not publicly disclosed"
+        "protection_period": "Managed via Microsoft co-sell and referral programs; in FY27 Azure IP co-sell is Marketplace-first and PRACR is no longer the broad co-sell mechanism. Starting November 2, 2026, Microsoft-sourced SMB referrals must be accepted or rejected within five calendar days or expire and may be rerouted; Corporate and Enterprise referrals retain 14 days. A separate deal-protection period is not publicly disclosed."
       },
       "mdf_available": {
         "offered": true,
@@ -385,6 +394,16 @@
           "date": "2026-10-01",
           "change": "Microsoft's Partner Center announcements say CSP license-based growth margins went live October 1, following September eligibility validation via APIs; the announcement overview does not disclose rates or eligibility criteria.",
           "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/"
+        },
+        {
+          "date": "2026-10-28",
+          "change": "Microsoft shortened the acceptance window for Microsoft-sourced SMB referrals to five calendar days, effective November 2, 2026. Unanswered referrals expire and can be rerouted to another partner; Corporate and Enterprise referrals retain the 14-day response window.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october"
+        },
+        {
+          "date": "2026-10-29",
+          "change": "Microsoft's FY27 Business Applications Pre-Sales Advisor incentive now extends to CSP customers, with adjusted rate cards and eligibility tied to the Business Applications specialization; the total FY27 partner investment commitment is unchanged and payout rates are not stated. Eligible CSP direct-bill partners and distributors can also offer 7.5% promotional pricing on two Business Premium security suites to qualifying customers under 300 seats.",
+          "source_url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october"
         },
         {
           "date": "2026-08-31",
@@ -500,6 +519,10 @@
         {
           "label": "Microsoft Partner Center announcements (includes October 1 growth-margin launch)",
           "url": "https://learn.microsoft.com/en-us/partner-center/announcements/"
+        },
+        {
+          "label": "Microsoft Partner Center October 2026 announcements",
+          "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-october"
         }
       ]
     },
